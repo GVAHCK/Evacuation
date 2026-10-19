@@ -1,0 +1,73 @@
+# Dense Urban Grid Configuration (George Town / Parrys)
+# Cross-Region Generalization Study (Zero-Shot Held-Out Region)
+
+project:
+  name: "RL-Evacuation-Twin-Dense-Grid"
+  version: "2.0.0"
+  region: "dense_grid"
+
+network:
+  north: 13.1000
+  south: 13.0850
+  east: 80.2950
+  west: 80.2800
+  network_type: "drive"
+  crs: "EPSG:4326"
+  graph_file: "data/processed/road_graph_dense_grid.json"
+
+traffic:
+  sim_duration: 3600
+  step_length: 1.0
+  densities:
+    low:
+      veh_per_hour: 200
+      period: 18.0
+    normal:
+      veh_per_hour: 500
+      period: 7.2
+    morning_peak:
+      veh_per_hour: 1000
+      period: 3.6
+    evening_peak:
+      veh_per_hour: 1200
+      period: 3.0
+    heavy:
+      veh_per_hour: 1600
+      period: 2.25
+
+hazard:
+  flood:
+    spread_rate: 0.08
+    propagation_prob: 0.65
+    elevation_sensitivity: 0.5
+    degradation_threshold: 0.35
+    closure_threshold: 0.70
+  fire:
+    spread_rate: 0.10
+    wind_direction: 45.0
+    wind_strength: 5.0
+    vegetation_factor: 0.6
+    degradation_threshold: 0.30
+    closure_threshold: 0.65
+
+scenarios:
+  n_test: 250
+  output_dir: "data/generated"
+
+environment:
+  max_episode_steps: 80
+  time_step_duration: 5.0
+  max_neighbors: 4
+  reward:
+    progress_weight: 4.0
+    arrival_bonus: 100.0
+    hazard_penalty_weight: 4.0
+    closure_penalty: 25.0
+    congestion_penalty_weight: 1.5
+    delay_penalty: 0.5
+    dead_end_penalty: 30.0
+    timeout_penalty: 40.0
+
+evaluation:
+  n_eval_episodes: 250
+  deterministic: true

@@ -1,0 +1,410 @@
+{
+  "model": "offline_online",
+  "seed": 101,
+  "mode": "quick",
+  "network_size": "small",
+  "elapsed_seconds": 39.10484790802002,
+  "episodes": [
+    {
+      "episode": 1,
+      "return": 37.894878948084624,
+      "success_rate": 1.0,
+      "mean_hei": 69.7655299573627,
+      "conflicts": 0,
+      "steps": 42
+    },
+    {
+      "episode": 2,
+      "return": 115.36332818015858,
+      "success_rate": 1.0,
+      "mean_hei": 2.3690978997886614,
+      "conflicts": 1,
+      "steps": 33
+    },
+    {
+      "episode": 3,
+      "return": 110.95558303322274,
+      "success_rate": 1.0,
+      "mean_hei": 21.473003293865453,
+      "conflicts": 0,
+      "steps": 33
+    },
+    {
+      "episode": 4,
+      "return": 88.0866698148751,
+      "success_rate": 1.0,
+      "mean_hei": 31.844603865086388,
+      "conflicts": 0,
+      "steps": 49
+    },
+    {
+      "episode": 5,
+      "return": 112.0959863113247,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 8
+    },
+    {
+      "episode": 6,
+      "return": 104.58371708916462,
+      "success_rate": 1.0,
+      "mean_hei": 12.36889978111781,
+      "conflicts": 6,
+      "steps": 20
+    },
+    {
+      "episode": 7,
+      "return": 112.38043195651413,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 14
+    },
+    {
+      "episode": 8,
+      "return": 10.332757718836756,
+      "success_rate": 0.75,
+      "mean_hei": 56.011543826792604,
+      "conflicts": 0,
+      "steps": 60
+    },
+    {
+      "episode": 9,
+      "return": 125.91960008094708,
+      "success_rate": 1.0,
+      "mean_hei": 2.5,
+      "conflicts": 0,
+      "steps": 23
+    },
+    {
+      "episode": 10,
+      "return": 115.13536873372371,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 12
+    },
+    {
+      "episode": 11,
+      "return": 111.32908813156237,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 10
+    },
+    {
+      "episode": 12,
+      "return": 112.08235995360172,
+      "success_rate": 1.0,
+      "mean_hei": 0.6744343358332894,
+      "conflicts": 6,
+      "steps": 17
+    },
+    {
+      "episode": 13,
+      "return": 34.65301048080154,
+      "success_rate": 0.75,
+      "mean_hei": 41.41450675834289,
+      "conflicts": 0,
+      "steps": 60
+    },
+    {
+      "episode": 14,
+      "return": 124.82384368441012,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 10
+    },
+    {
+      "episode": 15,
+      "return": 114.7581783429876,
+      "success_rate": 1.0,
+      "mean_hei": 0.8333609380664351,
+      "conflicts": 0,
+      "steps": 8
+    },
+    {
+      "episode": 16,
+      "return": 114.25832795651053,
+      "success_rate": 1.0,
+      "mean_hei": 7.106114322328734,
+      "conflicts": 0,
+      "steps": 16
+    },
+    {
+      "episode": 17,
+      "return": 118.42804383952344,
+      "success_rate": 1.0,
+      "mean_hei": 1.25,
+      "conflicts": 0,
+      "steps": 13
+    },
+    {
+      "episode": 18,
+      "return": 130.35078523095518,
+      "success_rate": 1.0,
+      "mean_hei": 1.000069861931589,
+      "conflicts": 0,
+      "steps": 14
+    },
+    {
+      "episode": 19,
+      "return": 107.12515961153869,
+      "success_rate": 1.0,
+      "mean_hei": 15.055133138121061,
+      "conflicts": 0,
+      "steps": 29
+    },
+    {
+      "episode": 20,
+      "return": 102.1864819357676,
+      "success_rate": 1.0,
+      "mean_hei": 30.653586365412824,
+      "conflicts": 4,
+      "steps": 29
+    },
+    {
+      "episode": 21,
+      "return": 133.40515691437653,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 15
+    },
+    {
+      "episode": 22,
+      "return": 120.84405465045481,
+      "success_rate": 1.0,
+      "mean_hei": 1.454122110588564,
+      "conflicts": 0,
+      "steps": 19
+    },
+    {
+      "episode": 23,
+      "return": 110.66476154963595,
+      "success_rate": 1.0,
+      "mean_hei": 3.6552253499018468,
+      "conflicts": 0,
+      "steps": 12
+    },
+    {
+      "episode": 24,
+      "return": 114.79793019494524,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 12
+    },
+    {
+      "episode": 25,
+      "return": 121.08050427893839,
+      "success_rate": 1.0,
+      "mean_hei": 2.2552545652075224,
+      "conflicts": 0,
+      "steps": 13
+    },
+    {
+      "episode": 26,
+      "return": 111.54573140497125,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 14
+    },
+    {
+      "episode": 27,
+      "return": 100.30907060575622,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 7,
+      "steps": 11
+    },
+    {
+      "episode": 28,
+      "return": 106.80974953176874,
+      "success_rate": 1.0,
+      "mean_hei": 0.8025357078317961,
+      "conflicts": 6,
+      "steps": 13
+    },
+    {
+      "episode": 29,
+      "return": 118.9078201167633,
+      "success_rate": 1.0,
+      "mean_hei": 18.859505247384742,
+      "conflicts": 0,
+      "steps": 49
+    },
+    {
+      "episode": 30,
+      "return": 121.63487640049598,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 13
+    },
+    {
+      "episode": 31,
+      "return": 112.01747453845736,
+      "success_rate": 1.0,
+      "mean_hei": 2.712453639565572,
+      "conflicts": 0,
+      "steps": 10
+    },
+    {
+      "episode": 32,
+      "return": 133.53983668715614,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 20
+    },
+    {
+      "episode": 33,
+      "return": 125.60456913017222,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 16
+    },
+    {
+      "episode": 34,
+      "return": 121.32578037624218,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 11
+    },
+    {
+      "episode": 35,
+      "return": 120.01861310994138,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 21
+    },
+    {
+      "episode": 36,
+      "return": 118.29825013925384,
+      "success_rate": 1.0,
+      "mean_hei": 0.2083664740743044,
+      "conflicts": 0,
+      "steps": 7
+    },
+    {
+      "episode": 37,
+      "return": 131.2615452031162,
+      "success_rate": 1.0,
+      "mean_hei": 2.5076222890844586,
+      "conflicts": 0,
+      "steps": 15
+    },
+    {
+      "episode": 38,
+      "return": 115.2235652310283,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 11
+    },
+    {
+      "episode": 39,
+      "return": 133.09847934495187,
+      "success_rate": 1.0,
+      "mean_hei": 2.734975696960496,
+      "conflicts": 0,
+      "steps": 21
+    },
+    {
+      "episode": 40,
+      "return": 117.423990143781,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 19
+    },
+    {
+      "episode": 41,
+      "return": 119.18673409754788,
+      "success_rate": 1.0,
+      "mean_hei": 0.11959444099492335,
+      "conflicts": 0,
+      "steps": 10
+    },
+    {
+      "episode": 42,
+      "return": 108.03113114309903,
+      "success_rate": 1.0,
+      "mean_hei": 0.4262833031113118,
+      "conflicts": 2,
+      "steps": 10
+    },
+    {
+      "episode": 43,
+      "return": 136.4315044185764,
+      "success_rate": 1.0,
+      "mean_hei": 1.2489108089602616,
+      "conflicts": 0,
+      "steps": 20
+    },
+    {
+      "episode": 44,
+      "return": 115.59218737781974,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 12
+    },
+    {
+      "episode": 45,
+      "return": 109.52746657333392,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 8
+    },
+    {
+      "episode": 46,
+      "return": 120.2732602599547,
+      "success_rate": 1.0,
+      "mean_hei": 0.0,
+      "conflicts": 0,
+      "steps": 13
+    },
+    {
+      "episode": 47,
+      "return": 37.550200850055944,
+      "success_rate": 0.75,
+      "mean_hei": 25.019694868294117,
+      "conflicts": 2,
+      "steps": 60
+    },
+    {
+      "episode": 48,
+      "return": 113.05327620339753,
+      "success_rate": 1.0,
+      "mean_hei": 0.8214708220414064,
+      "conflicts": 0,
+      "steps": 14
+    },
+    {
+      "episode": 49,
+      "return": 103.30522528886432,
+      "success_rate": 1.0,
+      "mean_hei": 8.495604805929311,
+      "conflicts": 0,
+      "steps": 18
+    },
+    {
+      "episode": 50,
+      "return": 113.73489834075616,
+      "success_rate": 1.0,
+      "mean_hei": 2.3430040142597512,
+      "conflicts": 0,
+      "steps": 12
+    }
+  ],
+  "final_best_eval_return": 121.81089802342038
+}

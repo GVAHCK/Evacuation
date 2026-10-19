@@ -1,0 +1,36 @@
+gnn:
+  candidate_feature_dim: 5
+  features_dim: 64
+  hidden_dim: 64
+  num_candidates: 4
+  num_layers: 2
+hyperparameters:
+  batch_size: 64
+  buffer_size: 25000
+  exploration_final_eps: 0.05
+  exploration_fraction: 0.2
+  exploration_initial_eps: 1.0
+  gamma: 0.99
+  learning_rate: 0.0001
+  learning_starts: 500
+  max_grad_norm: 10.0
+  n_quantiles: 25
+  target_update_interval: 1000
+  tau: 1.0
+  train_freq: 4
+model:
+  name: GNN-QRDQN
+  version: 1.0.0
+policy:
+  net_arch:
+  - 64
+  - 64
+training:
+  full_timesteps: 50000
+  quick_timesteps: 5000
+  seeds:
+  - 42
+  - 101
+  - 2024
+  - 777
+  - 999

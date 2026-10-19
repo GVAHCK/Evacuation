@@ -1,0 +1,32 @@
+{
+  "dense_grid": {
+    "region_key": "dense_grid",
+    "name": "George Town (Dense Urban Grid)",
+    "description": "Orthogonal rectilinear downtown grid, high junction density, short link lengths, abundant parallel corridors.",
+    "nodes": 366,
+    "edges": 994,
+    "total_length_km": 81.12,
+    "avg_edge_length_m": 81.6,
+    "density": 0.007441,
+    "avg_out_degree": 2.72,
+    "dead_ends": 0,
+    "is_strongly_connected": true,
+    "file_size_kb": 351.0,
+    "json_path": "data/processed/road_graph_dense_grid.json"
+  },
+  "sparse_suburban": {
+    "region_key": "sparse_suburban",
+    "name": "OMR Suburban (Sparse Linear Corridor)",
+    "description": "Sparse suburban network dominated by a central north-south arterial spine with dendritic branch roads and limited bypasses.",
+    "nodes": 336,
+    "edges": 870,
+    "total_length_km": 62.83,
+    "avg_edge_length_m": 72.2,
+    "density": 0.007729,
+    "avg_out_degree": 2.59,
+    "dead_ends": 0,
+    "is_strongly_connected": true,
+    "file_size_kb": 312.4,
+    "json_path": "data/processed/road_graph_sparse_suburban.json"
+  }
+}

@@ -1,0 +1,5 @@
+Ablation_Condition,Success_Rate,Mean_HEI,Mean_Travel_Time,Mean_Closure_Encounters,Mean_Episode_Reward
+Full Proposed State,100.0,0.57,55.06,0.0,107.14
+Ablation 1 (No Congestion Info),100.0,0.57,35.7,0.0,112.95
+Ablation 2 (No Hazard Info),100.0,0.57,55.06,0.0,107.14
+Ablation 3 (No Closure Info),100.0,0.57,55.06,0.0,107.14

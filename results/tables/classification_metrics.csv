@@ -1,0 +1,15 @@
+# PART 1: PER-STEP ROUTING DECISION CLASSIFICATION METRICS (GROUND TRUTH = DYNAMIC DIJKSTRA OPTIMAL ACTION)
+Evaluation_Level,Model,Total_Steps,Accuracy,Macro_Precision,Macro_Recall,Macro_F1,Weighted_Precision,Weighted_Recall,Weighted_F1,Slot0_F1,Slot1_F1,Slot2_F1,Slot3_F1
+Per-Step Routing Decision,PPO,714,0.9832,0.3277,0.3333,0.3305,0.9667,0.9832,0.9749,0.9915,0.0,0.0,0.0
+Per-Step Routing Decision,DQN,714,0.9832,0.3277,0.3333,0.3305,0.9667,0.9832,0.9749,0.9915,0.0,0.0,0.0
+Per-Step Routing Decision,Dynamic Dijkstra,777,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Per-Step Routing Decision,Dynamic A*,777,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Per-Step Routing Decision,Random,5120,0.5732,0.2965,0.5627,0.2755,0.9032,0.5732,0.6837,0.7266,0.1681,0.0976,0.1096
+
+# PART 2: EPISODE-LEVEL OUTCOME CLASSIFICATION METRICS (POSITIVE CLASS = SAFE EVACUATION REACHED)
+Evaluation_Level,Model,Total_Episodes,TP,FN,FP,TN,Accuracy,Precision,Recall,F1_Score
+Episode-Level Safe Evacuation,PPO,100,100,0,0,0,1.0,1.0,1.0,1.0
+Episode-Level Safe Evacuation,DQN,100,100,0,0,0,1.0,1.0,1.0,1.0
+Episode-Level Safe Evacuation,Dynamic Dijkstra,100,99,1,0,0,0.99,1.0,0.99,0.995
+Episode-Level Safe Evacuation,Dynamic A*,100,99,1,0,0,0.99,1.0,0.99,0.995
+Episode-Level Safe Evacuation,Random,100,21,79,0,0,0.21,1.0,0.21,0.3471

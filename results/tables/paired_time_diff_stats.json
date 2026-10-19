@@ -1,0 +1,49 @@
+{
+  "N": 500,
+  "mean_diff_s": -4.1358936037347105,
+  "std_diff_s": 53.422834281612936,
+  "median_diff_s": 0.0,
+  "q25_s": -8.5,
+  "q75_s": 0.0,
+  "iqr_s": 8.5,
+  "min_diff_s": -594.812476783068,
+  "max_diff_s": 559.6890613873312,
+  "skewness": 2.8433851917613926,
+  "excess_kurtosis": 80.1085702631791,
+  "pearson_kurtosis": 83.1085702631791,
+  "breakdown": {
+    "ties_count": 286,
+    "ties_pct": 57.199999999999996,
+    "ppo_faster_count": 162,
+    "ppo_faster_pct": 32.4,
+    "dijkstra_faster_count": 52,
+    "dijkstra_faster_pct": 10.4,
+    "win_ratio": 3.1153846153846154
+  },
+  "outliers": {
+    "fence_1_5_iqr": [
+      -21.25,
+      12.75
+    ],
+    "n_outliers": 70,
+    "n_low_outliers_ppo_much_faster": 54,
+    "n_high_outliers_dijkstra_faster": 16,
+    "fence_3_0_iqr": [
+      -34.0,
+      25.5
+    ],
+    "n_extreme_outliers": 48
+  },
+  "normality_tests": {
+    "shapiro_stat": 0.2901588962589283,
+    "shapiro_p": 7.222086276049539e-40,
+    "dagostino_k2": 439.1276035732806,
+    "dagostino_p": 4.412172245180968e-96
+  },
+  "statistical_tests": {
+    "paired_t_stat": -1.7311210402852804,
+    "paired_t_p": 0.08404829816867991,
+    "wilcoxon_w": 4511.5,
+    "wilcoxon_p": 1.2433377664492036e-14
+  }
+}

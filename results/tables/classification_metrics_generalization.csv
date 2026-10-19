@@ -1,0 +1,3 @@
+Region,Region_Key,Total_Steps,Accuracy,Weighted_Precision,Weighted_Recall,Weighted_F1,Macro_F1
+George Town (Dense Urban Grid),dense_grid,4390,90.59,0.9144,0.9059,0.8689,0.4548
+OMR Suburban (Sparse Linear Corridor),sparse_suburban,4686,91.06,0.9173,0.9106,0.8763,0.4074

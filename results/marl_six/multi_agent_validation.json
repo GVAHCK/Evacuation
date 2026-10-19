@@ -1,0 +1,40 @@
+{
+  "status": "VALIDATED",
+  "n_agents": 4,
+  "n_agents_smoke_test": 8,
+  "origins": [
+    "310100036",
+    "12833451246",
+    "310102929",
+    "2274401031"
+  ],
+  "destinations": [
+    "4839858814",
+    "416852633",
+    "4841378903",
+    "2274401033"
+  ],
+  "cohort_types": [
+    "Type A (Standard)",
+    "Type B (Congestion-Sensitive)",
+    "Type C (Hazard-Sensitive / Vulnerable)",
+    "Type D (Long-Distance Perimeter)"
+  ],
+  "mean_observation_l2_diff": 1.5987011194229126,
+  "metrics": {
+    "individual_success": 1.0,
+    "joint_success": true,
+    "conflict_count": 0,
+    "mean_HEI": 4.572239662970678,
+    "mean_distance": 1207.4921899338842,
+    "mean_time": 73.5,
+    "joint_return": 470.9038409761019
+  },
+  "coupling_verified": {
+    "heterogeneous_cohort_weights": true,
+    "dynamic_link_congestion": true,
+    "bottleneck_conflict_penalties": true,
+    "shared_hazard_propagation": true,
+    "route_overlap_computation": true
+  }
+}

@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: evac_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: evacuation_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d evacuation_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: evac_fastapi
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://postgres:postgres@postgres:5432/evacuation_db
+      - ENVIRONMENT=production
+      - MODEL_CHECKPOINT=models/marl_six/offline_online/seed_42/best_model.pt
+      - MODEL_DEVICE=cpu
+      - OSM_GRAPH_PATH=data/processed/road_graph_large.json
+    ports:
+      - "8000:8000"
+
+volumes:
+  postgres_data:

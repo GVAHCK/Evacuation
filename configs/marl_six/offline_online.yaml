@@ -1,0 +1,33 @@
+# Offline-to-Online MARL Configuration
+model: "Offline-to-Online RL"
+family: "marl_six"
+
+agent:
+  n_agents: 4
+  obs_dim: 34
+  act_dim: 4
+  hidden_dim: 128
+  actor_lr: 0.0003
+  critic_lr: 0.0008
+  gamma: 0.98
+  cql_alpha: 1.0          # Conservative Q-learning regularizer
+  cql_target_action_gap: 1.0
+  conservative_weight: 0.5
+
+offline_pretrain:
+  dataset_dir: "data/offline_marl"
+  epochs_quick: 10
+  epochs_full: 40
+  batch_size: 128
+  lr: 0.0005
+
+online_finetune:
+  quick_episodes: 30
+  full_episodes: 200
+  buffer_size: 30000
+  batch_size: 128
+  tau: 0.005
+  policy_regularization_weight: 0.1
+
+training:
+  seeds: [42, 101, 2024, 777, 999]

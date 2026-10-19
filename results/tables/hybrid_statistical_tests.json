@@ -1,0 +1,5602 @@
+{
+  "GNN-MaskablePPO (seed 42)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  },
+  "RecurrentMaskablePPO (seed 42)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0926,
+        "ci_95": [
+          -5.5904,
+          6.278
+        ],
+        "shapiro_stat": 0.273,
+        "shapiro_p": 3.3652e-40,
+        "is_normal": false,
+        "t_statistic": 0.0281,
+        "t_p_value": 0.97762,
+        "wilcoxon_statistic": 4779.5,
+        "wilcoxon_p_value": 1.2073e-13,
+        "cohens_d": 0.0013,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.5413,
+        "ci_95": [
+          1.226,
+          7.9737
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.36e-42,
+        "is_normal": false,
+        "t_statistic": 2.4361,
+        "t_p_value": 0.015195,
+        "wilcoxon_statistic": 255.5,
+        "wilcoxon_p_value": 0.0086306,
+        "cohens_d": 0.1089,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 125.2749,
+        "ci_95": [
+          23.6548,
+          227.2932
+        ],
+        "shapiro_stat": 0.1677,
+        "shapiro_p": 4.2491e-42,
+        "is_normal": false,
+        "t_statistic": 2.2835,
+        "t_p_value": 0.022821,
+        "wilcoxon_statistic": 10153.0,
+        "wilcoxon_p_value": 5.8666e-07,
+        "cohens_d": 0.1021,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -24.3687,
+        "ci_95": [
+          -46.5388,
+          -3.46
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.3593e-42,
+        "is_normal": false,
+        "t_statistic": -2.0708,
+        "t_p_value": 0.038894,
+        "wilcoxon_statistic": 5799.5,
+        "wilcoxon_p_value": 3.1921e-10,
+        "cohens_d": -0.0926,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -68.8577,
+        "ci_95": [
+          -85.9095,
+          -53.0371
+        ],
+        "shapiro_stat": 0.4052,
+        "shapiro_p": 1.8299e-37,
+        "is_normal": false,
+        "t_statistic": -7.9201,
+        "t_p_value": 1.5542e-14,
+        "wilcoxon_statistic": 196.0,
+        "wilcoxon_p_value": 1.3743e-12,
+        "cohens_d": -0.3542,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -11.7414,
+        "ci_95": [
+          -17.814,
+          -6.3065
+        ],
+        "shapiro_stat": 0.389,
+        "shapiro_p": 7.9982e-38,
+        "is_normal": false,
+        "t_statistic": -3.9175,
+        "t_p_value": 0.00010193,
+        "wilcoxon_statistic": 363.0,
+        "wilcoxon_p_value": 8.1467e-05,
+        "cohens_d": -0.1752,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -547.9686,
+        "ci_95": [
+          -706.5117,
+          -404.2446
+        ],
+        "shapiro_stat": 0.4403,
+        "shapiro_p": 1.1789e-36,
+        "is_normal": false,
+        "t_statistic": -6.4846,
+        "t_p_value": 2.1435e-10,
+        "wilcoxon_statistic": 349.0,
+        "wilcoxon_p_value": 1.3331e-11,
+        "cohens_d": -0.29,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 108.3372,
+        "ci_95": [
+          71.6832,
+          148.0945
+        ],
+        "shapiro_stat": 0.4354,
+        "shapiro_p": 9.0413e-37,
+        "is_normal": false,
+        "t_statistic": 5.5465,
+        "t_p_value": 4.7338e-08,
+        "wilcoxon_statistic": 513.0,
+        "wilcoxon_p_value": 8.42e-09,
+        "cohens_d": 0.248,
+        "statistically_significant": true
+      }
+    }
+  },
+  "GNN-QRDQN (seed 42)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  },
+  "SafetyShieldPPO (seed 42)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  },
+  "TriHybridAgent (seed 42)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  },
+  "GNN-MaskablePPO (seed 101)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  },
+  "RecurrentMaskablePPO (seed 101)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0926,
+        "ci_95": [
+          -5.5904,
+          6.278
+        ],
+        "shapiro_stat": 0.273,
+        "shapiro_p": 3.3652e-40,
+        "is_normal": false,
+        "t_statistic": 0.0281,
+        "t_p_value": 0.97762,
+        "wilcoxon_statistic": 4779.5,
+        "wilcoxon_p_value": 1.2073e-13,
+        "cohens_d": 0.0013,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.5413,
+        "ci_95": [
+          1.226,
+          7.9737
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.36e-42,
+        "is_normal": false,
+        "t_statistic": 2.4361,
+        "t_p_value": 0.015195,
+        "wilcoxon_statistic": 255.5,
+        "wilcoxon_p_value": 0.0086306,
+        "cohens_d": 0.1089,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 125.2749,
+        "ci_95": [
+          23.6548,
+          227.2932
+        ],
+        "shapiro_stat": 0.1677,
+        "shapiro_p": 4.2491e-42,
+        "is_normal": false,
+        "t_statistic": 2.2835,
+        "t_p_value": 0.022821,
+        "wilcoxon_statistic": 10153.0,
+        "wilcoxon_p_value": 5.8666e-07,
+        "cohens_d": 0.1021,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -24.3687,
+        "ci_95": [
+          -46.5388,
+          -3.46
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.3593e-42,
+        "is_normal": false,
+        "t_statistic": -2.0708,
+        "t_p_value": 0.038894,
+        "wilcoxon_statistic": 5799.5,
+        "wilcoxon_p_value": 3.1921e-10,
+        "cohens_d": -0.0926,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -68.8577,
+        "ci_95": [
+          -85.9095,
+          -53.0371
+        ],
+        "shapiro_stat": 0.4052,
+        "shapiro_p": 1.8299e-37,
+        "is_normal": false,
+        "t_statistic": -7.9201,
+        "t_p_value": 1.5542e-14,
+        "wilcoxon_statistic": 196.0,
+        "wilcoxon_p_value": 1.3743e-12,
+        "cohens_d": -0.3542,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -11.7414,
+        "ci_95": [
+          -17.814,
+          -6.3065
+        ],
+        "shapiro_stat": 0.389,
+        "shapiro_p": 7.9982e-38,
+        "is_normal": false,
+        "t_statistic": -3.9175,
+        "t_p_value": 0.00010193,
+        "wilcoxon_statistic": 363.0,
+        "wilcoxon_p_value": 8.1467e-05,
+        "cohens_d": -0.1752,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -547.9686,
+        "ci_95": [
+          -706.5117,
+          -404.2446
+        ],
+        "shapiro_stat": 0.4403,
+        "shapiro_p": 1.1789e-36,
+        "is_normal": false,
+        "t_statistic": -6.4846,
+        "t_p_value": 2.1435e-10,
+        "wilcoxon_statistic": 349.0,
+        "wilcoxon_p_value": 1.3331e-11,
+        "cohens_d": -0.29,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 108.3372,
+        "ci_95": [
+          71.6832,
+          148.0945
+        ],
+        "shapiro_stat": 0.4354,
+        "shapiro_p": 9.0413e-37,
+        "is_normal": false,
+        "t_statistic": 5.5465,
+        "t_p_value": 4.7338e-08,
+        "wilcoxon_statistic": 513.0,
+        "wilcoxon_p_value": 8.42e-09,
+        "cohens_d": 0.248,
+        "statistically_significant": true
+      }
+    }
+  },
+  "GNN-QRDQN (seed 101)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  },
+  "SafetyShieldPPO (seed 101)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -2.4697,
+        "ci_95": [
+          -5.9038,
+          0.076
+        ],
+        "shapiro_stat": 0.0519,
+        "shapiro_p": 5.676e-44,
+        "is_normal": false,
+        "t_statistic": -1.4647,
+        "t_p_value": 0.14363,
+        "wilcoxon_statistic": 26.0,
+        "wilcoxon_p_value": 0.17295,
+        "cohens_d": -0.0655,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -1.8861,
+        "ci_95": [
+          -3.8795,
+          -0.0299
+        ],
+        "shapiro_stat": 0.0993,
+        "shapiro_p": 3.1374e-43,
+        "is_normal": false,
+        "t_statistic": -1.7504,
+        "t_p_value": 0.08066,
+        "wilcoxon_statistic": 21.0,
+        "wilcoxon_p_value": 0.04799,
+        "cohens_d": -0.0783,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -67.2696,
+        "ci_95": [
+          -141.3102,
+          1.5065
+        ],
+        "shapiro_stat": 0.1239,
+        "shapiro_p": 7.8692e-43,
+        "is_normal": false,
+        "t_statistic": -1.7996,
+        "t_p_value": 0.072529,
+        "wilcoxon_statistic": 23.0,
+        "wilcoxon_p_value": 0.064039,
+        "cohens_d": -0.0805,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 8.2361,
+        "ci_95": [
+          -3.0352,
+          20.2079
+        ],
+        "shapiro_stat": 0.0871,
+        "shapiro_p": 2.0118e-43,
+        "is_normal": false,
+        "t_statistic": 1.2649,
+        "t_p_value": 0.20651,
+        "wilcoxon_statistic": 27.0,
+        "wilcoxon_p_value": 0.10942,
+        "cohens_d": 0.0566,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -2.3771,
+        "ci_95": [
+          -7.4555,
+          3.0491
+        ],
+        "shapiro_stat": 0.2827,
+        "shapiro_p": 5.1761e-40,
+        "is_normal": false,
+        "t_statistic": -0.8542,
+        "t_p_value": 0.39343,
+        "wilcoxon_statistic": 4679.5,
+        "wilcoxon_p_value": 8.6258e-14,
+        "cohens_d": -0.0382,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 2.6552,
+        "ci_95": [
+          -0.4,
+          5.8893
+        ],
+        "shapiro_stat": 0.1384,
+        "shapiro_p": 1.3605e-42,
+        "is_normal": false,
+        "t_statistic": 1.6079,
+        "t_p_value": 0.10848,
+        "wilcoxon_statistic": 299.0,
+        "wilcoxon_p_value": 0.056538,
+        "cohens_d": 0.0719,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 58.0053,
+        "ci_95": [
+          -20.9102,
+          145.3947
+        ],
+        "shapiro_stat": 0.1555,
+        "shapiro_p": 2.6362e-42,
+        "is_normal": false,
+        "t_statistic": 1.3438,
+        "t_p_value": 0.17961,
+        "wilcoxon_statistic": 10533.0,
+        "wilcoxon_p_value": 4.5203e-06,
+        "cohens_d": 0.0601,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -16.1327,
+        "ci_95": [
+          -36.4038,
+          2.9732
+        ],
+        "shapiro_stat": 0.1408,
+        "shapiro_p": 1.493e-42,
+        "is_normal": false,
+        "t_statistic": -1.5776,
+        "t_p_value": 0.1153,
+        "wilcoxon_statistic": 5434.5,
+        "wilcoxon_p_value": 3.5941e-11,
+        "cohens_d": -0.0706,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -71.3274,
+        "ci_95": [
+          -88.0034,
+          -55.3071
+        ],
+        "shapiro_stat": 0.4082,
+        "shapiro_p": 2.1381e-37,
+        "is_normal": false,
+        "t_statistic": -8.1248,
+        "t_p_value": 3.5508e-15,
+        "wilcoxon_statistic": 149.0,
+        "wilcoxon_p_value": 1.9118e-13,
+        "cohens_d": -0.3634,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -13.6274,
+        "ci_95": [
+          -19.8108,
+          -8.0369
+        ],
+        "shapiro_stat": 0.3778,
+        "shapiro_p": 4.5508e-38,
+        "is_normal": false,
+        "t_statistic": -4.5272,
+        "t_p_value": 7.4816e-06,
+        "wilcoxon_statistic": 293.0,
+        "wilcoxon_p_value": 4.6739e-06,
+        "cohens_d": -0.2025,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -615.2382,
+        "ci_95": [
+          -766.837,
+          -469.1938
+        ],
+        "shapiro_stat": 0.4267,
+        "shapiro_p": 5.6743e-37,
+        "is_normal": false,
+        "t_statistic": -7.5515,
+        "t_p_value": 2.0645e-13,
+        "wilcoxon_statistic": 119.0,
+        "wilcoxon_p_value": 8.5131e-15,
+        "cohens_d": -0.3377,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 116.5733,
+        "ci_95": [
+          78.7407,
+          157.0988
+        ],
+        "shapiro_stat": 0.4346,
+        "shapiro_p": 8.6751e-37,
+        "is_normal": false,
+        "t_statistic": 5.8815,
+        "t_p_value": 7.4563e-09,
+        "wilcoxon_statistic": 458.0,
+        "wilcoxon_p_value": 1.1853e-09,
+        "cohens_d": 0.263,
+        "statistically_significant": true
+      }
+    }
+  },
+  "TriHybridAgent (seed 101)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  },
+  "GNN-MaskablePPO (seed 2024)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0926,
+        "ci_95": [
+          -5.5904,
+          6.278
+        ],
+        "shapiro_stat": 0.273,
+        "shapiro_p": 3.3652e-40,
+        "is_normal": false,
+        "t_statistic": 0.0281,
+        "t_p_value": 0.97762,
+        "wilcoxon_statistic": 4779.5,
+        "wilcoxon_p_value": 1.2073e-13,
+        "cohens_d": 0.0013,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.5413,
+        "ci_95": [
+          1.226,
+          7.9737
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.36e-42,
+        "is_normal": false,
+        "t_statistic": 2.4361,
+        "t_p_value": 0.015195,
+        "wilcoxon_statistic": 255.5,
+        "wilcoxon_p_value": 0.0086306,
+        "cohens_d": 0.1089,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 125.2749,
+        "ci_95": [
+          23.6548,
+          227.2932
+        ],
+        "shapiro_stat": 0.1677,
+        "shapiro_p": 4.2491e-42,
+        "is_normal": false,
+        "t_statistic": 2.2835,
+        "t_p_value": 0.022821,
+        "wilcoxon_statistic": 10153.0,
+        "wilcoxon_p_value": 5.8666e-07,
+        "cohens_d": 0.1021,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -24.3687,
+        "ci_95": [
+          -46.5388,
+          -3.46
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.3593e-42,
+        "is_normal": false,
+        "t_statistic": -2.0708,
+        "t_p_value": 0.038894,
+        "wilcoxon_statistic": 5799.5,
+        "wilcoxon_p_value": 3.1921e-10,
+        "cohens_d": -0.0926,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -68.8577,
+        "ci_95": [
+          -85.9095,
+          -53.0371
+        ],
+        "shapiro_stat": 0.4052,
+        "shapiro_p": 1.8299e-37,
+        "is_normal": false,
+        "t_statistic": -7.9201,
+        "t_p_value": 1.5542e-14,
+        "wilcoxon_statistic": 196.0,
+        "wilcoxon_p_value": 1.3743e-12,
+        "cohens_d": -0.3542,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -11.7414,
+        "ci_95": [
+          -17.814,
+          -6.3065
+        ],
+        "shapiro_stat": 0.389,
+        "shapiro_p": 7.9982e-38,
+        "is_normal": false,
+        "t_statistic": -3.9175,
+        "t_p_value": 0.00010193,
+        "wilcoxon_statistic": 363.0,
+        "wilcoxon_p_value": 8.1467e-05,
+        "cohens_d": -0.1752,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -547.9686,
+        "ci_95": [
+          -706.5117,
+          -404.2446
+        ],
+        "shapiro_stat": 0.4403,
+        "shapiro_p": 1.1789e-36,
+        "is_normal": false,
+        "t_statistic": -6.4846,
+        "t_p_value": 2.1435e-10,
+        "wilcoxon_statistic": 349.0,
+        "wilcoxon_p_value": 1.3331e-11,
+        "cohens_d": -0.29,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 108.3372,
+        "ci_95": [
+          71.6832,
+          148.0945
+        ],
+        "shapiro_stat": 0.4354,
+        "shapiro_p": 9.0413e-37,
+        "is_normal": false,
+        "t_statistic": 5.5465,
+        "t_p_value": 4.7338e-08,
+        "wilcoxon_statistic": 513.0,
+        "wilcoxon_p_value": 8.42e-09,
+        "cohens_d": 0.248,
+        "statistically_significant": true
+      }
+    }
+  },
+  "RecurrentMaskablePPO (seed 2024)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0926,
+        "ci_95": [
+          -5.5904,
+          6.278
+        ],
+        "shapiro_stat": 0.273,
+        "shapiro_p": 3.3652e-40,
+        "is_normal": false,
+        "t_statistic": 0.0281,
+        "t_p_value": 0.97762,
+        "wilcoxon_statistic": 4779.5,
+        "wilcoxon_p_value": 1.2073e-13,
+        "cohens_d": 0.0013,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.5413,
+        "ci_95": [
+          1.226,
+          7.9737
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.36e-42,
+        "is_normal": false,
+        "t_statistic": 2.4361,
+        "t_p_value": 0.015195,
+        "wilcoxon_statistic": 255.5,
+        "wilcoxon_p_value": 0.0086306,
+        "cohens_d": 0.1089,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 125.2749,
+        "ci_95": [
+          23.6548,
+          227.2932
+        ],
+        "shapiro_stat": 0.1677,
+        "shapiro_p": 4.2491e-42,
+        "is_normal": false,
+        "t_statistic": 2.2835,
+        "t_p_value": 0.022821,
+        "wilcoxon_statistic": 10153.0,
+        "wilcoxon_p_value": 5.8666e-07,
+        "cohens_d": 0.1021,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -24.3687,
+        "ci_95": [
+          -46.5388,
+          -3.46
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.3593e-42,
+        "is_normal": false,
+        "t_statistic": -2.0708,
+        "t_p_value": 0.038894,
+        "wilcoxon_statistic": 5799.5,
+        "wilcoxon_p_value": 3.1921e-10,
+        "cohens_d": -0.0926,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -68.8577,
+        "ci_95": [
+          -85.9095,
+          -53.0371
+        ],
+        "shapiro_stat": 0.4052,
+        "shapiro_p": 1.8299e-37,
+        "is_normal": false,
+        "t_statistic": -7.9201,
+        "t_p_value": 1.5542e-14,
+        "wilcoxon_statistic": 196.0,
+        "wilcoxon_p_value": 1.3743e-12,
+        "cohens_d": -0.3542,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -11.7414,
+        "ci_95": [
+          -17.814,
+          -6.3065
+        ],
+        "shapiro_stat": 0.389,
+        "shapiro_p": 7.9982e-38,
+        "is_normal": false,
+        "t_statistic": -3.9175,
+        "t_p_value": 0.00010193,
+        "wilcoxon_statistic": 363.0,
+        "wilcoxon_p_value": 8.1467e-05,
+        "cohens_d": -0.1752,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -547.9686,
+        "ci_95": [
+          -706.5117,
+          -404.2446
+        ],
+        "shapiro_stat": 0.4403,
+        "shapiro_p": 1.1789e-36,
+        "is_normal": false,
+        "t_statistic": -6.4846,
+        "t_p_value": 2.1435e-10,
+        "wilcoxon_statistic": 349.0,
+        "wilcoxon_p_value": 1.3331e-11,
+        "cohens_d": -0.29,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 108.3372,
+        "ci_95": [
+          71.6832,
+          148.0945
+        ],
+        "shapiro_stat": 0.4354,
+        "shapiro_p": 9.0413e-37,
+        "is_normal": false,
+        "t_statistic": 5.5465,
+        "t_p_value": 4.7338e-08,
+        "wilcoxon_statistic": 513.0,
+        "wilcoxon_p_value": 8.42e-09,
+        "cohens_d": 0.248,
+        "statistically_significant": true
+      }
+    }
+  },
+  "GNN-QRDQN (seed 2024)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0055,
+        "ci_95": [
+          0.0,
+          0.013
+        ],
+        "shapiro_stat": 0.0427,
+        "shapiro_p": 4.1048e-44,
+        "is_normal": false,
+        "t_statistic": 1.5494,
+        "t_p_value": 0.12192,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": 0.10881,
+        "cohens_d": 0.0693,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 0.0681,
+        "ci_95": [
+          -0.047,
+          0.2222
+        ],
+        "shapiro_stat": 0.0474,
+        "shapiro_p": 4.8442e-44,
+        "is_normal": false,
+        "t_statistic": 0.9179,
+        "t_p_value": 0.35909,
+        "wilcoxon_statistic": 1.0,
+        "wilcoxon_p_value": 0.28505,
+        "cohens_d": 0.0411,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 4.0445,
+        "ci_95": [
+          -0.9173,
+          12.0494
+        ],
+        "shapiro_stat": 0.0332,
+        "shapiro_p": 2.9504e-44,
+        "is_normal": false,
+        "t_statistic": 1.0451,
+        "t_p_value": 0.2965,
+        "wilcoxon_statistic": 1.0,
+        "wilcoxon_p_value": 0.28505,
+        "cohens_d": 0.0467,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -0.7264,
+        "ci_95": [
+          -1.6604,
+          0.0
+        ],
+        "shapiro_stat": 0.046,
+        "shapiro_p": 4.6212e-44,
+        "is_normal": false,
+        "t_statistic": -1.6166,
+        "t_p_value": 0.10661,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": 0.10881,
+        "cohens_d": -0.0723,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0981,
+        "ci_95": [
+          -5.5872,
+          6.2853
+        ],
+        "shapiro_stat": 0.2729,
+        "shapiro_p": 3.3529e-40,
+        "is_normal": false,
+        "t_statistic": 0.0297,
+        "t_p_value": 0.97631,
+        "wilcoxon_statistic": 4779.5,
+        "wilcoxon_p_value": 1.2073e-13,
+        "cohens_d": 0.0013,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.6094,
+        "ci_95": [
+          1.272,
+          8.1122
+        ],
+        "shapiro_stat": 0.1521,
+        "shapiro_p": 2.3088e-42,
+        "is_normal": false,
+        "t_statistic": 2.436,
+        "t_p_value": 0.015197,
+        "wilcoxon_statistic": 278.5,
+        "wilcoxon_p_value": 0.018843,
+        "cohens_d": 0.1089,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 129.3193,
+        "ci_95": [
+          27.6667,
+          233.2769
+        ],
+        "shapiro_stat": 0.1695,
+        "shapiro_p": 4.5586e-42,
+        "is_normal": false,
+        "t_statistic": 2.3277,
+        "t_p_value": 0.020329,
+        "wilcoxon_statistic": 10153.0,
+        "wilcoxon_p_value": 5.8666e-07,
+        "cohens_d": 0.1041,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -25.0951,
+        "ci_95": [
+          -47.446,
+          -3.8973
+        ],
+        "shapiro_stat": 0.1533,
+        "shapiro_p": 2.4173e-42,
+        "is_normal": false,
+        "t_statistic": -2.1046,
+        "t_p_value": 0.035822,
+        "wilcoxon_statistic": 5801.5,
+        "wilcoxon_p_value": 3.2378e-10,
+        "cohens_d": -0.0941,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -68.8522,
+        "ci_95": [
+          -85.9063,
+          -53.0286
+        ],
+        "shapiro_stat": 0.4052,
+        "shapiro_p": 1.8363e-37,
+        "is_normal": false,
+        "t_statistic": -7.9193,
+        "t_p_value": 1.5624e-14,
+        "wilcoxon_statistic": 196.0,
+        "wilcoxon_p_value": 1.3743e-12,
+        "cohens_d": -0.3542,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -11.6732,
+        "ci_95": [
+          -17.8191,
+          -6.2313
+        ],
+        "shapiro_stat": 0.3903,
+        "shapiro_p": 8.5516e-38,
+        "is_normal": false,
+        "t_statistic": -3.8765,
+        "t_p_value": 0.00012013,
+        "wilcoxon_statistic": 368.0,
+        "wilcoxon_p_value": 9.5282e-05,
+        "cohens_d": -0.1734,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -543.9241,
+        "ci_95": [
+          -706.5454,
+          -398.5866
+        ],
+        "shapiro_stat": 0.4377,
+        "shapiro_p": 1.0252e-36,
+        "is_normal": false,
+        "t_statistic": -6.4373,
+        "t_p_value": 2.8593e-10,
+        "wilcoxon_statistic": 358.0,
+        "wilcoxon_p_value": 1.718e-11,
+        "cohens_d": -0.2879,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 107.6108,
+        "ci_95": [
+          71.0185,
+          147.2979
+        ],
+        "shapiro_stat": 0.4377,
+        "shapiro_p": 1.025e-36,
+        "is_normal": false,
+        "t_statistic": 5.4925,
+        "t_p_value": 6.3232e-08,
+        "wilcoxon_statistic": 523.0,
+        "wilcoxon_p_value": 1.0905e-08,
+        "cohens_d": 0.2456,
+        "statistically_significant": true
+      }
+    }
+  },
+  "SafetyShieldPPO (seed 2024)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 1.0902,
+        "ci_95": [
+          -0.4108,
+          3.8437
+        ],
+        "shapiro_stat": 0.0286,
+        "shapiro_p": 2.5167e-44,
+        "is_normal": false,
+        "t_statistic": 0.8227,
+        "t_p_value": 0.41106,
+        "wilcoxon_statistic": 19.0,
+        "wilcoxon_p_value": 0.21322,
+        "cohens_d": 0.0368,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.3517,
+        "ci_95": [
+          -1.7668,
+          1.443
+        ],
+        "shapiro_stat": 0.0788,
+        "shapiro_p": 1.4833e-43,
+        "is_normal": false,
+        "t_statistic": -0.4128,
+        "t_p_value": 0.67996,
+        "wilcoxon_statistic": 18.0,
+        "wilcoxon_p_value": 0.099481,
+        "cohens_d": -0.0185,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 18.193,
+        "ci_95": [
+          -7.6734,
+          47.0475
+        ],
+        "shapiro_stat": 0.1083,
+        "shapiro_p": 4.3777e-43,
+        "is_normal": false,
+        "t_statistic": 1.2362,
+        "t_p_value": 0.21696,
+        "wilcoxon_statistic": 23.0,
+        "wilcoxon_p_value": 0.20943,
+        "cohens_d": 0.0553,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -1.7553,
+        "ci_95": [
+          -12.6251,
+          5.7657
+        ],
+        "shapiro_stat": 0.0495,
+        "shapiro_p": 5.218e-44,
+        "is_normal": false,
+        "t_statistic": -0.3539,
+        "t_p_value": 0.72357,
+        "wilcoxon_statistic": 23.0,
+        "wilcoxon_p_value": 0.20943,
+        "cohens_d": -0.0158,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 1.1828,
+        "ci_95": [
+          -5.0355,
+          8.0325
+        ],
+        "shapiro_stat": 0.2764,
+        "shapiro_p": 3.9159e-40,
+        "is_normal": false,
+        "t_statistic": 0.3371,
+        "t_p_value": 0.7362,
+        "wilcoxon_statistic": 4910.5,
+        "wilcoxon_p_value": 3.5558e-13,
+        "cohens_d": 0.0151,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.1896,
+        "ci_95": [
+          0.8291,
+          7.885
+        ],
+        "shapiro_stat": 0.1589,
+        "shapiro_p": 3.0117e-42,
+        "is_normal": false,
+        "t_statistic": 2.1881,
+        "t_p_value": 0.029127,
+        "wilcoxon_statistic": 296.5,
+        "wilcoxon_p_value": 0.033067,
+        "cohens_d": 0.0979,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 143.4678,
+        "ci_95": [
+          43.3841,
+          241.4253
+        ],
+        "shapiro_stat": 0.1767,
+        "shapiro_p": 6.0425e-42,
+        "is_normal": false,
+        "t_statistic": 2.7036,
+        "t_p_value": 0.0070929,
+        "wilcoxon_statistic": 9672.0,
+        "wilcoxon_p_value": 6.2727e-08,
+        "cohens_d": 0.1209,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -26.124,
+        "ci_95": [
+          -49.6037,
+          -4.2331
+        ],
+        "shapiro_stat": 0.159,
+        "shapiro_p": 3.0135e-42,
+        "is_normal": false,
+        "t_statistic": -2.1483,
+        "t_p_value": 0.032168,
+        "wilcoxon_statistic": 5787.5,
+        "wilcoxon_p_value": 2.9311e-10,
+        "cohens_d": -0.0961,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -67.7675,
+        "ci_95": [
+          -84.9826,
+          -51.9175
+        ],
+        "shapiro_stat": 0.3987,
+        "shapiro_p": 1.3124e-37,
+        "is_normal": false,
+        "t_statistic": -7.8711,
+        "t_p_value": 2.2039e-14,
+        "wilcoxon_statistic": 203.0,
+        "wilcoxon_p_value": 1.0934e-12,
+        "cohens_d": -0.352,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.093,
+        "ci_95": [
+          -17.9272,
+          -6.6624
+        ],
+        "shapiro_stat": 0.3675,
+        "shapiro_p": 2.7323e-38,
+        "is_normal": false,
+        "t_statistic": -4.2643,
+        "t_p_value": 2.3994e-05,
+        "wilcoxon_statistic": 329.0,
+        "wilcoxon_p_value": 1.604e-05,
+        "cohens_d": -0.1907,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -529.7756,
+        "ci_95": [
+          -694.032,
+          -376.0228
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6024e-37,
+        "is_normal": false,
+        "t_statistic": -6.3206,
+        "t_p_value": 5.7851e-10,
+        "wilcoxon_statistic": 358.0,
+        "wilcoxon_p_value": 1.0605e-11,
+        "cohens_d": -0.2827,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 106.5819,
+        "ci_95": [
+          70.9178,
+          144.7931
+        ],
+        "shapiro_stat": 0.4235,
+        "shapiro_p": 4.7774e-37,
+        "is_normal": false,
+        "t_statistic": 5.6565,
+        "t_p_value": 2.6061e-08,
+        "wilcoxon_statistic": 533.0,
+        "wilcoxon_p_value": 8.4478e-09,
+        "cohens_d": 0.253,
+        "statistically_significant": true
+      }
+    }
+  },
+  "TriHybridAgent (seed 2024)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0019,
+        "ci_95": [
+          -0.0057,
+          0.0099
+        ],
+        "shapiro_stat": 0.0571,
+        "shapiro_p": 6.8298e-44,
+        "is_normal": false,
+        "t_statistic": 0.4257,
+        "t_p_value": 0.67054,
+        "wilcoxon_statistic": 3.0,
+        "wilcoxon_p_value": 1.0,
+        "cohens_d": 0.019,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 0.0934,
+        "ci_95": [
+          -0.012,
+          0.2612
+        ],
+        "shapiro_stat": 0.0436,
+        "shapiro_p": 4.2419e-44,
+        "is_normal": false,
+        "t_statistic": 1.2051,
+        "t_p_value": 0.22874,
+        "wilcoxon_statistic": 1.0,
+        "wilcoxon_p_value": 0.28505,
+        "cohens_d": 0.0539,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -11.6424,
+        "ci_95": [
+          -33.8894,
+          7.0105
+        ],
+        "shapiro_stat": 0.0501,
+        "shapiro_p": 5.3326e-44,
+        "is_normal": false,
+        "t_statistic": -1.0085,
+        "t_p_value": 0.31369,
+        "wilcoxon_statistic": 1.0,
+        "wilcoxon_p_value": 0.28505,
+        "cohens_d": -0.0451,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -0.612,
+        "ci_95": [
+          -1.6976,
+          0.0989
+        ],
+        "shapiro_stat": 0.0463,
+        "shapiro_p": 4.6592e-44,
+        "is_normal": false,
+        "t_statistic": -1.1942,
+        "t_p_value": 0.23296,
+        "wilcoxon_statistic": 1.0,
+        "wilcoxon_p_value": 0.28505,
+        "cohens_d": -0.0534,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0945,
+        "ci_95": [
+          -5.5939,
+          6.2812
+        ],
+        "shapiro_stat": 0.2728,
+        "shapiro_p": 3.3446e-40,
+        "is_normal": false,
+        "t_statistic": 0.0286,
+        "t_p_value": 0.97718,
+        "wilcoxon_statistic": 4726.5,
+        "wilcoxon_p_value": 1.2803e-13,
+        "cohens_d": 0.0013,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.6347,
+        "ci_95": [
+          1.2976,
+          8.1263
+        ],
+        "shapiro_stat": 0.1515,
+        "shapiro_p": 2.2586e-42,
+        "is_normal": false,
+        "t_statistic": 2.4439,
+        "t_p_value": 0.014876,
+        "wilcoxon_statistic": 250.5,
+        "wilcoxon_p_value": 0.011961,
+        "cohens_d": 0.1093,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 113.6325,
+        "ci_95": [
+          20.0075,
+          213.4367
+        ],
+        "shapiro_stat": 0.1636,
+        "shapiro_p": 3.6122e-42,
+        "is_normal": false,
+        "t_statistic": 2.1569,
+        "t_p_value": 0.031492,
+        "wilcoxon_statistic": 10153.0,
+        "wilcoxon_p_value": 8.8354e-07,
+        "cohens_d": 0.0965,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -24.9807,
+        "ci_95": [
+          -47.3015,
+          -3.8944
+        ],
+        "shapiro_stat": 0.1517,
+        "shapiro_p": 2.2735e-42,
+        "is_normal": false,
+        "t_statistic": -2.0874,
+        "t_p_value": 0.037358,
+        "wilcoxon_statistic": 5589.5,
+        "wilcoxon_p_value": 1.135e-10,
+        "cohens_d": -0.0934,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -68.8558,
+        "ci_95": [
+          -85.9096,
+          -53.0318
+        ],
+        "shapiro_stat": 0.4052,
+        "shapiro_p": 1.8348e-37,
+        "is_normal": false,
+        "t_statistic": -7.9198,
+        "t_p_value": 1.5572e-14,
+        "wilcoxon_statistic": 195.0,
+        "wilcoxon_p_value": 1.3307e-12,
+        "cohens_d": -0.3542,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -11.6479,
+        "ci_95": [
+          -17.782,
+          -6.2037
+        ],
+        "shapiro_stat": 0.3903,
+        "shapiro_p": 8.5528e-38,
+        "is_normal": false,
+        "t_statistic": -3.8668,
+        "t_p_value": 0.00012484,
+        "wilcoxon_statistic": 368.0,
+        "wilcoxon_p_value": 9.5282e-05,
+        "cohens_d": -0.1729,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -559.611,
+        "ci_95": [
+          -716.7764,
+          -415.7783
+        ],
+        "shapiro_stat": 0.4258,
+        "shapiro_p": 5.4223e-37,
+        "is_normal": false,
+        "t_statistic": -6.697,
+        "t_p_value": 5.7458e-11,
+        "wilcoxon_statistic": 283.0,
+        "wilcoxon_p_value": 1.9922e-12,
+        "cohens_d": -0.2995,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 107.7252,
+        "ci_95": [
+          71.1311,
+          147.1253
+        ],
+        "shapiro_stat": 0.4377,
+        "shapiro_p": 1.0282e-36,
+        "is_normal": false,
+        "t_statistic": 5.4973,
+        "t_p_value": 6.1634e-08,
+        "wilcoxon_statistic": 510.0,
+        "wilcoxon_p_value": 7.7885e-09,
+        "cohens_d": 0.2458,
+        "statistically_significant": true
+      }
+    }
+  },
+  "GNN-MaskablePPO (seed 777)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "shapiro_stat": 1.0,
+        "shapiro_p": 1.0,
+        "is_normal": true,
+        "t_statistic": NaN,
+        "t_p_value": NaN,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value": NaN,
+        "cohens_d": 0.0,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 0.0926,
+        "ci_95": [
+          -5.5904,
+          6.278
+        ],
+        "shapiro_stat": 0.273,
+        "shapiro_p": 3.3652e-40,
+        "is_normal": false,
+        "t_statistic": 0.0281,
+        "t_p_value": 0.97762,
+        "wilcoxon_statistic": 4779.5,
+        "wilcoxon_p_value": 1.2073e-13,
+        "cohens_d": 0.0013,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.5413,
+        "ci_95": [
+          1.226,
+          7.9737
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.36e-42,
+        "is_normal": false,
+        "t_statistic": 2.4361,
+        "t_p_value": 0.015195,
+        "wilcoxon_statistic": 255.5,
+        "wilcoxon_p_value": 0.0086306,
+        "cohens_d": 0.1089,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 125.2749,
+        "ci_95": [
+          23.6548,
+          227.2932
+        ],
+        "shapiro_stat": 0.1677,
+        "shapiro_p": 4.2491e-42,
+        "is_normal": false,
+        "t_statistic": 2.2835,
+        "t_p_value": 0.022821,
+        "wilcoxon_statistic": 10153.0,
+        "wilcoxon_p_value": 5.8666e-07,
+        "cohens_d": 0.1021,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -24.3687,
+        "ci_95": [
+          -46.5388,
+          -3.46
+        ],
+        "shapiro_stat": 0.1527,
+        "shapiro_p": 2.3593e-42,
+        "is_normal": false,
+        "t_statistic": -2.0708,
+        "t_p_value": 0.038894,
+        "wilcoxon_statistic": 5799.5,
+        "wilcoxon_p_value": 3.1921e-10,
+        "cohens_d": -0.0926,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -68.8577,
+        "ci_95": [
+          -85.9095,
+          -53.0371
+        ],
+        "shapiro_stat": 0.4052,
+        "shapiro_p": 1.8299e-37,
+        "is_normal": false,
+        "t_statistic": -7.9201,
+        "t_p_value": 1.5542e-14,
+        "wilcoxon_statistic": 196.0,
+        "wilcoxon_p_value": 1.3743e-12,
+        "cohens_d": -0.3542,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -11.7414,
+        "ci_95": [
+          -17.814,
+          -6.3065
+        ],
+        "shapiro_stat": 0.389,
+        "shapiro_p": 7.9982e-38,
+        "is_normal": false,
+        "t_statistic": -3.9175,
+        "t_p_value": 0.00010193,
+        "wilcoxon_statistic": 363.0,
+        "wilcoxon_p_value": 8.1467e-05,
+        "cohens_d": -0.1752,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -547.9686,
+        "ci_95": [
+          -706.5117,
+          -404.2446
+        ],
+        "shapiro_stat": 0.4403,
+        "shapiro_p": 1.1789e-36,
+        "is_normal": false,
+        "t_statistic": -6.4846,
+        "t_p_value": 2.1435e-10,
+        "wilcoxon_statistic": 349.0,
+        "wilcoxon_p_value": 1.3331e-11,
+        "cohens_d": -0.29,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 108.3372,
+        "ci_95": [
+          71.6832,
+          148.0945
+        ],
+        "shapiro_stat": 0.4354,
+        "shapiro_p": 9.0413e-37,
+        "is_normal": false,
+        "t_statistic": 5.5465,
+        "t_p_value": 4.7338e-08,
+        "wilcoxon_statistic": 513.0,
+        "wilcoxon_p_value": 8.42e-09,
+        "cohens_d": 0.248,
+        "statistically_significant": true
+      }
+    }
+  },
+  "RecurrentMaskablePPO (seed 777)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.0429,
+        "ci_95": [
+          -3.1464,
+          0.0762
+        ],
+        "shapiro_stat": 0.0265,
+        "shapiro_p": 2.336e-44,
+        "is_normal": false,
+        "t_statistic": -1.0351,
+        "t_p_value": 0.30111,
+        "wilcoxon_statistic": 33.0,
+        "wilcoxon_p_value": 0.63787,
+        "cohens_d": -0.0463,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.4786,
+        "ci_95": [
+          -2.1083,
+          0.8135
+        ],
+        "shapiro_stat": 0.0686,
+        "shapiro_p": 1.0308e-43,
+        "is_normal": false,
+        "t_statistic": -0.6059,
+        "t_p_value": 0.54486,
+        "wilcoxon_statistic": 43.0,
+        "wilcoxon_p_value": 0.8613,
+        "cohens_d": -0.0271,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -46.8366,
+        "ci_95": [
+          -111.5502,
+          12.456
+        ],
+        "shapiro_stat": 0.1253,
+        "shapiro_p": 8.2753e-43,
+        "is_normal": false,
+        "t_statistic": -1.4327,
+        "t_p_value": 0.15256,
+        "wilcoxon_statistic": 26.0,
+        "wilcoxon_p_value": 0.17295,
+        "cohens_d": -0.0641,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 2.9013,
+        "ci_95": [
+          -6.6215,
+          13.5706
+        ],
+        "shapiro_stat": 0.0726,
+        "shapiro_p": 1.189e-43,
+        "is_normal": false,
+        "t_statistic": 0.5278,
+        "t_p_value": 0.5979,
+        "wilcoxon_statistic": 45.0,
+        "wilcoxon_p_value": 0.97213,
+        "cohens_d": 0.0236,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9503,
+        "ci_95": [
+          -6.4297,
+          4.881
+        ],
+        "shapiro_stat": 0.2713,
+        "shapiro_p": 3.1255e-40,
+        "is_normal": false,
+        "t_statistic": -0.3057,
+        "t_p_value": 0.75998,
+        "wilcoxon_statistic": 4712.5,
+        "wilcoxon_p_value": 1.1385e-13,
+        "cohens_d": -0.0137,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.0626,
+        "ci_95": [
+          0.7685,
+          7.3326
+        ],
+        "shapiro_stat": 0.1434,
+        "shapiro_p": 1.6489e-42,
+        "is_normal": false,
+        "t_statistic": 2.2502,
+        "t_p_value": 0.024871,
+        "wilcoxon_statistic": 263.5,
+        "wilcoxon_p_value": 0.018736,
+        "cohens_d": 0.1006,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 78.4383,
+        "ci_95": [
+          -0.9813,
+          164.2411
+        ],
+        "shapiro_stat": 0.1565,
+        "shapiro_p": 2.7427e-42,
+        "is_normal": false,
+        "t_statistic": 1.7939,
+        "t_p_value": 0.073428,
+        "wilcoxon_statistic": 10202.0,
+        "wilcoxon_p_value": 1.097e-06,
+        "cohens_d": 0.0802,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -21.4675,
+        "ci_95": [
+          -41.5716,
+          -0.8973
+        ],
+        "shapiro_stat": 0.1484,
+        "shapiro_p": 1.9976e-42,
+        "is_normal": false,
+        "t_statistic": -1.9229,
+        "t_p_value": 0.055066,
+        "wilcoxon_statistic": 5755.5,
+        "wilcoxon_p_value": 3.766e-10,
+        "cohens_d": -0.086,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9006,
+        "ci_95": [
+          -86.5072,
+          -54.2126
+        ],
+        "shapiro_stat": 0.4078,
+        "shapiro_p": 2.0932e-37,
+        "is_normal": false,
+        "t_statistic": -8.0103,
+        "t_p_value": 8.1321e-15,
+        "wilcoxon_statistic": 188.0,
+        "wilcoxon_p_value": 6.7733e-13,
+        "cohens_d": -0.3582,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.22,
+        "ci_95": [
+          -18.6249,
+          -6.7041
+        ],
+        "shapiro_stat": 0.392,
+        "shapiro_p": 9.2891e-38,
+        "is_normal": false,
+        "t_statistic": -3.9854,
+        "t_p_value": 7.7434e-05,
+        "wilcoxon_statistic": 371.0,
+        "wilcoxon_p_value": 6.2093e-05,
+        "cohens_d": -0.1782,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -594.8051,
+        "ci_95": [
+          -747.2064,
+          -452.5354
+        ],
+        "shapiro_stat": 0.4199,
+        "shapiro_p": 3.9494e-37,
+        "is_normal": false,
+        "t_statistic": -7.3765,
+        "t_p_value": 6.8229e-13,
+        "wilcoxon_statistic": 146.0,
+        "wilcoxon_p_value": 1.9933e-14,
+        "cohens_d": -0.3299,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 111.2385,
+        "ci_95": [
+          74.955,
+          150.0255
+        ],
+        "shapiro_stat": 0.4386,
+        "shapiro_p": 1.078e-36,
+        "is_normal": false,
+        "t_statistic": 5.6034,
+        "t_p_value": 3.481e-08,
+        "wilcoxon_statistic": 515.0,
+        "wilcoxon_p_value": 5.322e-09,
+        "cohens_d": 0.2506,
+        "statistically_significant": true
+      }
+    }
+  },
+  "GNN-QRDQN (seed 777)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  },
+  "SafetyShieldPPO (seed 777)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 2.2079,
+        "ci_95": [
+          -1.9033,
+          7.152
+        ],
+        "shapiro_stat": 0.0835,
+        "shapiro_p": 1.7596e-43,
+        "is_normal": false,
+        "t_statistic": 0.9189,
+        "t_p_value": 0.35858,
+        "wilcoxon_statistic": 44.0,
+        "wilcoxon_p_value": 0.59362,
+        "cohens_d": 0.0411,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.6148,
+        "ci_95": [
+          -3.4465,
+          2.4694
+        ],
+        "shapiro_stat": 0.1337,
+        "shapiro_p": 1.1368e-42,
+        "is_normal": false,
+        "t_statistic": -0.3993,
+        "t_p_value": 0.68984,
+        "wilcoxon_statistic": 45.0,
+        "wilcoxon_p_value": 0.39425,
+        "cohens_d": -0.0179,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -0.9246,
+        "ci_95": [
+          -55.8051,
+          48.2457
+        ],
+        "shapiro_stat": 0.1108,
+        "shapiro_p": 4.8063e-43,
+        "is_normal": false,
+        "t_statistic": -0.0343,
+        "t_p_value": 0.97268,
+        "wilcoxon_statistic": 51.0,
+        "wilcoxon_p_value": 0.60924,
+        "cohens_d": -0.0015,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -1.1406,
+        "ci_95": [
+          -20.4139,
+          15.7746
+        ],
+        "shapiro_stat": 0.1133,
+        "shapiro_p": 5.2811e-43,
+        "is_normal": false,
+        "t_statistic": -0.1196,
+        "t_p_value": 0.90483,
+        "wilcoxon_statistic": 46.0,
+        "wilcoxon_p_value": 0.42653,
+        "cohens_d": -0.0053,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": 2.3005,
+        "ci_95": [
+          -4.2487,
+          9.1441
+        ],
+        "shapiro_stat": 0.2775,
+        "shapiro_p": 4.1076e-40,
+        "is_normal": false,
+        "t_statistic": 0.6363,
+        "t_p_value": 0.52488,
+        "wilcoxon_statistic": 5221.5,
+        "wilcoxon_p_value": 4.2557e-12,
+        "cohens_d": 0.0285,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9265,
+        "ci_95": [
+          0.4608,
+          7.582
+        ],
+        "shapiro_stat": 0.1608,
+        "shapiro_p": 3.2343e-42,
+        "is_normal": false,
+        "t_statistic": 2.1248,
+        "t_p_value": 0.034095,
+        "wilcoxon_statistic": 297.5,
+        "wilcoxon_p_value": 0.021172,
+        "cohens_d": 0.095,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 124.3503,
+        "ci_95": [
+          25.7572,
+          217.1687
+        ],
+        "shapiro_stat": 0.1854,
+        "shapiro_p": 8.5605e-42,
+        "is_normal": false,
+        "t_statistic": 2.4615,
+        "t_p_value": 0.014172,
+        "wilcoxon_statistic": 9103.0,
+        "wilcoxon_p_value": 3.5887e-09,
+        "cohens_d": 0.1101,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -25.5094,
+        "ci_95": [
+          -49.2287,
+          -3.7452
+        ],
+        "shapiro_stat": 0.1638,
+        "shapiro_p": 3.6403e-42,
+        "is_normal": false,
+        "t_statistic": -2.1424,
+        "t_p_value": 0.032645,
+        "wilcoxon_statistic": 5854.5,
+        "wilcoxon_p_value": 4.7094e-10,
+        "cohens_d": -0.0958,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -66.6497,
+        "ci_95": [
+          -82.782,
+          -51.2718
+        ],
+        "shapiro_stat": 0.3901,
+        "shapiro_p": 8.4591e-38,
+        "is_normal": false,
+        "t_statistic": -7.843,
+        "t_p_value": 2.69e-14,
+        "wilcoxon_statistic": 142.0,
+        "wilcoxon_p_value": 3.6272e-13,
+        "cohens_d": -0.3507,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3561,
+        "ci_95": [
+          -17.5064,
+          -7.3685
+        ],
+        "shapiro_stat": 0.3458,
+        "shapiro_p": 9.5368e-39,
+        "is_normal": false,
+        "t_statistic": -4.5819,
+        "t_p_value": 5.8281e-06,
+        "wilcoxon_statistic": 246.0,
+        "wilcoxon_p_value": 2.3705e-06,
+        "cohens_d": -0.2049,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -548.8931,
+        "ci_95": [
+          -702.1796,
+          -397.8319
+        ],
+        "shapiro_stat": 0.4167,
+        "shapiro_p": 3.3425e-37,
+        "is_normal": false,
+        "t_statistic": -6.754,
+        "t_p_value": 4.0151e-11,
+        "wilcoxon_statistic": 247.0,
+        "wilcoxon_p_value": 1.0852e-12,
+        "cohens_d": -0.302,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 107.1965,
+        "ci_95": [
+          74.3803,
+          142.0654
+        ],
+        "shapiro_stat": 0.4048,
+        "shapiro_p": 1.7926e-37,
+        "is_normal": false,
+        "t_statistic": 5.9543,
+        "t_p_value": 4.9316e-09,
+        "wilcoxon_statistic": 355.0,
+        "wilcoxon_p_value": 1.8002e-10,
+        "cohens_d": 0.2663,
+        "statistically_significant": true
+      }
+    }
+  },
+  "TriHybridAgent (seed 777)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -2.2549,
+        "ci_95": [
+          -5.6427,
+          0.2895
+        ],
+        "shapiro_stat": 0.0454,
+        "shapiro_p": 4.5195e-44,
+        "is_normal": false,
+        "t_statistic": -1.3449,
+        "t_p_value": 0.17926,
+        "wilcoxon_statistic": 32.0,
+        "wilcoxon_p_value": 0.34545,
+        "cohens_d": -0.0601,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -1.2029,
+        "ci_95": [
+          -3.097,
+          0.3647
+        ],
+        "shapiro_stat": 0.0716,
+        "shapiro_p": 1.1462e-43,
+        "is_normal": false,
+        "t_statistic": -1.2413,
+        "t_p_value": 0.21506,
+        "wilcoxon_statistic": 23.0,
+        "wilcoxon_p_value": 0.064039,
+        "cohens_d": -0.0555,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -67.5945,
+        "ci_95": [
+          -135.4085,
+          -6.818
+        ],
+        "shapiro_stat": 0.108,
+        "shapiro_p": 4.3385e-43,
+        "is_normal": false,
+        "t_statistic": -1.9987,
+        "t_p_value": 0.046186,
+        "wilcoxon_statistic": 20.0,
+        "wilcoxon_p_value": 0.041327,
+        "cohens_d": -0.0894,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 7.6837,
+        "ci_95": [
+          -3.0082,
+          19.9014
+        ],
+        "shapiro_stat": 0.0801,
+        "shapiro_p": 1.555e-43,
+        "is_normal": false,
+        "t_statistic": 1.1969,
+        "t_p_value": 0.2319,
+        "wilcoxon_statistic": 26.0,
+        "wilcoxon_p_value": 0.096197,
+        "cohens_d": 0.0535,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -2.1623,
+        "ci_95": [
+          -7.1623,
+          3.4701
+        ],
+        "shapiro_stat": 0.2723,
+        "shapiro_p": 3.27e-40,
+        "is_normal": false,
+        "t_statistic": -0.7713,
+        "t_p_value": 0.4409,
+        "wilcoxon_statistic": 4416.5,
+        "wilcoxon_p_value": 1.4917e-14,
+        "cohens_d": -0.0345,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.3384,
+        "ci_95": [
+          0.2464,
+          6.6749
+        ],
+        "shapiro_stat": 0.1324,
+        "shapiro_p": 1.0832e-42,
+        "is_normal": false,
+        "t_statistic": 2.0085,
+        "t_p_value": 0.045133,
+        "wilcoxon_statistic": 254.0,
+        "wilcoxon_p_value": 0.022183,
+        "cohens_d": 0.0898,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 57.6804,
+        "ci_95": [
+          -18.3262,
+          143.1932
+        ],
+        "shapiro_stat": 0.1405,
+        "shapiro_p": 1.4761e-42,
+        "is_normal": false,
+        "t_statistic": 1.3803,
+        "t_p_value": 0.1681,
+        "wilcoxon_statistic": 10441.0,
+        "wilcoxon_p_value": 4.559e-06,
+        "cohens_d": 0.0617,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -16.685,
+        "ci_95": [
+          -37.6752,
+          2.4535
+        ],
+        "shapiro_stat": 0.1371,
+        "shapiro_p": 1.296e-42,
+        "is_normal": false,
+        "t_statistic": -1.6168,
+        "t_p_value": 0.10656,
+        "wilcoxon_statistic": 5443.5,
+        "wilcoxon_p_value": 6.2543e-11,
+        "cohens_d": -0.0723,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -71.1126,
+        "ci_95": [
+          -87.7121,
+          -55.058
+        ],
+        "shapiro_stat": 0.411,
+        "shapiro_p": 2.4811e-37,
+        "is_normal": false,
+        "t_statistic": -8.092,
+        "t_p_value": 4.5039e-15,
+        "wilcoxon_statistic": 171.0,
+        "wilcoxon_p_value": 3.9162e-13,
+        "cohens_d": -0.3619,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.9443,
+        "ci_95": [
+          -19.0631,
+          -7.2068
+        ],
+        "shapiro_stat": 0.3896,
+        "shapiro_p": 8.2347e-38,
+        "is_normal": false,
+        "t_statistic": -4.2194,
+        "t_p_value": 2.9106e-05,
+        "wilcoxon_statistic": 338.0,
+        "wilcoxon_p_value": 2.1603e-05,
+        "cohens_d": -0.1887,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -615.5631,
+        "ci_95": [
+          -771.0656,
+          -468.0596
+        ],
+        "shapiro_stat": 0.423,
+        "shapiro_p": 4.6503e-37,
+        "is_normal": false,
+        "t_statistic": -7.4503,
+        "t_p_value": 4.1336e-13,
+        "wilcoxon_statistic": 141.0,
+        "wilcoxon_p_value": 1.7042e-14,
+        "cohens_d": -0.3332,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 116.0209,
+        "ci_95": [
+          78.3766,
+          156.206
+        ],
+        "shapiro_stat": 0.4362,
+        "shapiro_p": 9.4344e-37,
+        "is_normal": false,
+        "t_statistic": 5.8283,
+        "t_p_value": 1.0056e-08,
+        "wilcoxon_statistic": 455.0,
+        "wilcoxon_p_value": 1.0934e-09,
+        "cohens_d": 0.2607,
+        "statistically_significant": true
+      }
+    }
+  },
+  "GNN-MaskablePPO (seed 999)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.0429,
+        "ci_95": [
+          -3.1464,
+          0.0762
+        ],
+        "shapiro_stat": 0.0265,
+        "shapiro_p": 2.336e-44,
+        "is_normal": false,
+        "t_statistic": -1.0351,
+        "t_p_value": 0.30111,
+        "wilcoxon_statistic": 33.0,
+        "wilcoxon_p_value": 0.63787,
+        "cohens_d": -0.0463,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.4786,
+        "ci_95": [
+          -2.1083,
+          0.8135
+        ],
+        "shapiro_stat": 0.0686,
+        "shapiro_p": 1.0308e-43,
+        "is_normal": false,
+        "t_statistic": -0.6059,
+        "t_p_value": 0.54486,
+        "wilcoxon_statistic": 43.0,
+        "wilcoxon_p_value": 0.8613,
+        "cohens_d": -0.0271,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -46.8366,
+        "ci_95": [
+          -111.5502,
+          12.456
+        ],
+        "shapiro_stat": 0.1253,
+        "shapiro_p": 8.2753e-43,
+        "is_normal": false,
+        "t_statistic": -1.4327,
+        "t_p_value": 0.15256,
+        "wilcoxon_statistic": 26.0,
+        "wilcoxon_p_value": 0.17295,
+        "cohens_d": -0.0641,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 2.9013,
+        "ci_95": [
+          -6.6215,
+          13.5706
+        ],
+        "shapiro_stat": 0.0726,
+        "shapiro_p": 1.189e-43,
+        "is_normal": false,
+        "t_statistic": 0.5278,
+        "t_p_value": 0.5979,
+        "wilcoxon_statistic": 45.0,
+        "wilcoxon_p_value": 0.97213,
+        "cohens_d": 0.0236,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9503,
+        "ci_95": [
+          -6.4297,
+          4.881
+        ],
+        "shapiro_stat": 0.2713,
+        "shapiro_p": 3.1255e-40,
+        "is_normal": false,
+        "t_statistic": -0.3057,
+        "t_p_value": 0.75998,
+        "wilcoxon_statistic": 4712.5,
+        "wilcoxon_p_value": 1.1385e-13,
+        "cohens_d": -0.0137,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 4.0626,
+        "ci_95": [
+          0.7685,
+          7.3326
+        ],
+        "shapiro_stat": 0.1434,
+        "shapiro_p": 1.6489e-42,
+        "is_normal": false,
+        "t_statistic": 2.2502,
+        "t_p_value": 0.024871,
+        "wilcoxon_statistic": 263.5,
+        "wilcoxon_p_value": 0.018736,
+        "cohens_d": 0.1006,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 78.4383,
+        "ci_95": [
+          -0.9813,
+          164.2411
+        ],
+        "shapiro_stat": 0.1565,
+        "shapiro_p": 2.7427e-42,
+        "is_normal": false,
+        "t_statistic": 1.7939,
+        "t_p_value": 0.073428,
+        "wilcoxon_statistic": 10202.0,
+        "wilcoxon_p_value": 1.097e-06,
+        "cohens_d": 0.0802,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -21.4675,
+        "ci_95": [
+          -41.5716,
+          -0.8973
+        ],
+        "shapiro_stat": 0.1484,
+        "shapiro_p": 1.9976e-42,
+        "is_normal": false,
+        "t_statistic": -1.9229,
+        "t_p_value": 0.055066,
+        "wilcoxon_statistic": 5755.5,
+        "wilcoxon_p_value": 3.766e-10,
+        "cohens_d": -0.086,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9006,
+        "ci_95": [
+          -86.5072,
+          -54.2126
+        ],
+        "shapiro_stat": 0.4078,
+        "shapiro_p": 2.0932e-37,
+        "is_normal": false,
+        "t_statistic": -8.0103,
+        "t_p_value": 8.1321e-15,
+        "wilcoxon_statistic": 188.0,
+        "wilcoxon_p_value": 6.7733e-13,
+        "cohens_d": -0.3582,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.22,
+        "ci_95": [
+          -18.6249,
+          -6.7041
+        ],
+        "shapiro_stat": 0.392,
+        "shapiro_p": 9.2891e-38,
+        "is_normal": false,
+        "t_statistic": -3.9854,
+        "t_p_value": 7.7434e-05,
+        "wilcoxon_statistic": 371.0,
+        "wilcoxon_p_value": 6.2093e-05,
+        "cohens_d": -0.1782,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -594.8051,
+        "ci_95": [
+          -747.2064,
+          -452.5354
+        ],
+        "shapiro_stat": 0.4199,
+        "shapiro_p": 3.9494e-37,
+        "is_normal": false,
+        "t_statistic": -7.3765,
+        "t_p_value": 6.8229e-13,
+        "wilcoxon_statistic": 146.0,
+        "wilcoxon_p_value": 1.9933e-14,
+        "cohens_d": -0.3299,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 111.2385,
+        "ci_95": [
+          74.955,
+          150.0255
+        ],
+        "shapiro_stat": 0.4386,
+        "shapiro_p": 1.078e-36,
+        "is_normal": false,
+        "t_statistic": 5.6034,
+        "t_p_value": 3.481e-08,
+        "wilcoxon_statistic": 515.0,
+        "wilcoxon_p_value": 5.322e-09,
+        "cohens_d": 0.2506,
+        "statistically_significant": true
+      }
+    }
+  },
+  "RecurrentMaskablePPO (seed 999)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9975,
+        "ci_95": [
+          -3.0073,
+          0.0109
+        ],
+        "shapiro_stat": 0.0213,
+        "shapiro_p": 1.9582e-44,
+        "is_normal": false,
+        "t_statistic": -0.9942,
+        "t_p_value": 0.32061,
+        "wilcoxon_statistic": 5.0,
+        "wilcoxon_p_value": 0.50018,
+        "cohens_d": -0.0445,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.6218,
+        "ci_95": [
+          -2.0187,
+          0.1497
+        ],
+        "shapiro_stat": 0.0267,
+        "shapiro_p": 2.3558e-44,
+        "is_normal": false,
+        "t_statistic": -0.9289,
+        "t_p_value": 0.35341,
+        "wilcoxon_statistic": 7.0,
+        "wilcoxon_p_value": 0.89274,
+        "cohens_d": -0.0415,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -16.5421,
+        "ci_95": [
+          -62.6401,
+          10.6312
+        ],
+        "shapiro_stat": 0.0325,
+        "shapiro_p": 2.8783e-44,
+        "is_normal": false,
+        "t_statistic": -0.7715,
+        "t_p_value": 0.4408,
+        "wilcoxon_statistic": 7.0,
+        "wilcoxon_p_value": 0.89274,
+        "cohens_d": -0.0345,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.6477,
+        "ci_95": [
+          -1.2727,
+          12.5919
+        ],
+        "shapiro_stat": 0.0266,
+        "shapiro_p": 2.3503e-44,
+        "is_normal": false,
+        "t_statistic": 0.862,
+        "t_p_value": 0.38909,
+        "wilcoxon_statistic": 6.0,
+        "wilcoxon_p_value": 0.68583,
+        "cohens_d": 0.0386,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9049,
+        "ci_95": [
+          -6.3586,
+          5.0309
+        ],
+        "shapiro_stat": 0.2693,
+        "shapiro_p": 2.8717e-40,
+        "is_normal": false,
+        "t_statistic": -0.2889,
+        "t_p_value": 0.77278,
+        "wilcoxon_statistic": 4717.5,
+        "wilcoxon_p_value": 7.1892e-14,
+        "cohens_d": -0.0129,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9194,
+        "ci_95": [
+          0.8112,
+          7.1896
+        ],
+        "shapiro_stat": 0.1445,
+        "shapiro_p": 1.7182e-42,
+        "is_normal": false,
+        "t_statistic": 2.2228,
+        "t_p_value": 0.026678,
+        "wilcoxon_statistic": 284.5,
+        "wilcoxon_p_value": 0.022836,
+        "cohens_d": 0.0994,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 108.7327,
+        "ci_95": [
+          14.8992,
+          211.5321
+        ],
+        "shapiro_stat": 0.1625,
+        "shapiro_p": 3.4579e-42,
+        "is_normal": false,
+        "t_statistic": 2.1018,
+        "t_p_value": 0.036073,
+        "wilcoxon_statistic": 10196.0,
+        "wilcoxon_p_value": 7.1064e-07,
+        "cohens_d": 0.094,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.721,
+        "ci_95": [
+          -41.7959,
+          -0.5547
+        ],
+        "shapiro_stat": 0.1457,
+        "shapiro_p": 1.7996e-42,
+        "is_normal": false,
+        "t_statistic": -1.8666,
+        "t_p_value": 0.062542,
+        "wilcoxon_statistic": 5797.5,
+        "wilcoxon_p_value": 3.1471e-10,
+        "cohens_d": -0.0835,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.8552,
+        "ci_95": [
+          -86.3963,
+          -54.1439
+        ],
+        "shapiro_stat": 0.4084,
+        "shapiro_p": 2.1636e-37,
+        "is_normal": false,
+        "t_statistic": -8.0035,
+        "t_p_value": 8.5444e-15,
+        "wilcoxon_statistic": 174.0,
+        "wilcoxon_p_value": 6.7337e-13,
+        "cohens_d": -0.3579,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3632,
+        "ci_95": [
+          -18.6186,
+          -6.6912
+        ],
+        "shapiro_stat": 0.3902,
+        "shapiro_p": 8.4751e-38,
+        "is_normal": false,
+        "t_statistic": -4.0672,
+        "t_p_value": 5.5284e-05,
+        "wilcoxon_statistic": 345.0,
+        "wilcoxon_p_value": 4.5835e-05,
+        "cohens_d": -0.1819,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -564.5107,
+        "ci_95": [
+          -727.1285,
+          -420.107
+        ],
+        "shapiro_stat": 0.4282,
+        "shapiro_p": 6.1652e-37,
+        "is_normal": false,
+        "t_statistic": -6.8301,
+        "t_p_value": 2.4757e-11,
+        "wilcoxon_statistic": 280.0,
+        "wilcoxon_p_value": 1.8242e-12,
+        "cohens_d": -0.3055,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 111.9849,
+        "ci_95": [
+          74.7473,
+          151.5862
+        ],
+        "shapiro_stat": 0.4364,
+        "shapiro_p": 9.5429e-37,
+        "is_normal": false,
+        "t_statistic": 5.6691,
+        "t_p_value": 2.4312e-08,
+        "wilcoxon_statistic": 474.0,
+        "wilcoxon_p_value": 3.0162e-09,
+        "cohens_d": 0.2535,
+        "statistically_significant": true
+      }
+    }
+  },
+  "GNN-QRDQN (seed 999)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  },
+  "SafetyShieldPPO (seed 999)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.0767,
+        "ci_95": [
+          -3.1688,
+          0.0454
+        ],
+        "shapiro_stat": 0.0271,
+        "shapiro_p": 2.3881e-44,
+        "is_normal": false,
+        "t_statistic": -1.0682,
+        "t_p_value": 0.28593,
+        "wilcoxon_statistic": 29.0,
+        "wilcoxon_p_value": 0.72211,
+        "cohens_d": -0.0478,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.7209,
+        "ci_95": [
+          -2.3367,
+          0.5907
+        ],
+        "shapiro_stat": 0.073,
+        "shapiro_p": 1.2059e-43,
+        "is_normal": false,
+        "t_statistic": -0.9013,
+        "t_p_value": 0.36788,
+        "wilcoxon_statistic": 26.0,
+        "wilcoxon_p_value": 0.30782,
+        "cohens_d": -0.0403,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -29.1382,
+        "ci_95": [
+          -88.2906,
+          17.5757
+        ],
+        "shapiro_stat": 0.0961,
+        "shapiro_p": 2.7965e-43,
+        "is_normal": false,
+        "t_statistic": -1.0823,
+        "t_p_value": 0.27964,
+        "wilcoxon_statistic": 31.0,
+        "wilcoxon_p_value": 0.53028,
+        "cohens_d": -0.0484,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9055,
+        "ci_95": [
+          -5.4231,
+          14.9198
+        ],
+        "shapiro_stat": 0.0716,
+        "shapiro_p": 1.1478e-43,
+        "is_normal": false,
+        "t_statistic": 0.7068,
+        "t_p_value": 0.48,
+        "wilcoxon_statistic": 27.0,
+        "wilcoxon_p_value": 0.34652,
+        "cohens_d": 0.0316,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9841,
+        "ci_95": [
+          -6.4854,
+          4.8322
+        ],
+        "shapiro_stat": 0.2715,
+        "shapiro_p": 3.156e-40,
+        "is_normal": false,
+        "t_statistic": -0.3172,
+        "t_p_value": 0.75124,
+        "wilcoxon_statistic": 4700.5,
+        "wilcoxon_p_value": 1.0294e-13,
+        "cohens_d": -0.0142,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.8203,
+        "ci_95": [
+          0.5628,
+          7.1684
+        ],
+        "shapiro_stat": 0.1427,
+        "shapiro_p": 1.6051e-42,
+        "is_normal": false,
+        "t_statistic": 2.1893,
+        "t_p_value": 0.029037,
+        "wilcoxon_statistic": 305.5,
+        "wilcoxon_p_value": 0.067915,
+        "cohens_d": 0.0979,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 96.1367,
+        "ci_95": [
+          8.9634,
+          183.1056
+        ],
+        "shapiro_stat": 0.1591,
+        "shapiro_p": 3.0249e-42,
+        "is_normal": false,
+        "t_statistic": 2.0358,
+        "t_p_value": 0.042299,
+        "wilcoxon_statistic": 10131.0,
+        "wilcoxon_p_value": 8.0128e-07,
+        "cohens_d": 0.091,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4633,
+        "ci_95": [
+          -40.4319,
+          0.1398
+        ],
+        "shapiro_stat": 0.1491,
+        "shapiro_p": 2.0562e-42,
+        "is_normal": false,
+        "t_statistic": -1.8781,
+        "t_p_value": 0.060944,
+        "wilcoxon_statistic": 5435.5,
+        "wilcoxon_p_value": 3.6212e-11,
+        "cohens_d": -0.084,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9344,
+        "ci_95": [
+          -86.5722,
+          -54.2558
+        ],
+        "shapiro_stat": 0.4073,
+        "shapiro_p": 2.047e-37,
+        "is_normal": false,
+        "t_statistic": -8.0148,
+        "t_p_value": 7.874e-15,
+        "wilcoxon_statistic": 181.0,
+        "wilcoxon_p_value": 5.409e-13,
+        "cohens_d": -0.3584,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.4623,
+        "ci_95": [
+          -18.7072,
+          -6.9519
+        ],
+        "shapiro_stat": 0.3844,
+        "shapiro_p": 6.3366e-38,
+        "is_normal": false,
+        "t_statistic": -4.0799,
+        "t_p_value": 5.2437e-05,
+        "wilcoxon_statistic": 353.0,
+        "wilcoxon_p_value": 3.5154e-05,
+        "cohens_d": -0.1825,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -577.1067,
+        "ci_95": [
+          -735.6515,
+          -432.7222
+        ],
+        "shapiro_stat": 0.437,
+        "shapiro_p": 9.8609e-37,
+        "is_normal": false,
+        "t_statistic": -6.9574,
+        "t_p_value": 1.0936e-11,
+        "wilcoxon_statistic": 258.0,
+        "wilcoxon_p_value": 6.0034e-13,
+        "cohens_d": -0.3111,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2427,
+        "ci_95": [
+          75.2233,
+          150.3896
+        ],
+        "shapiro_stat": 0.4334,
+        "shapiro_p": 8.1308e-37,
+        "is_normal": false,
+        "t_statistic": 5.6661,
+        "t_p_value": 2.4719e-08,
+        "wilcoxon_statistic": 500.0,
+        "wilcoxon_p_value": 3.605e-09,
+        "cohens_d": 0.2534,
+        "statistically_significant": true
+      }
+    }
+  },
+  "TriHybridAgent (seed 999)": {
+    "vs_BaselinePPO": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -1.06,
+        "ci_95": [
+          -3.1553,
+          0.0591
+        ],
+        "shapiro_stat": 0.0269,
+        "shapiro_p": 2.3686e-44,
+        "is_normal": false,
+        "t_statistic": -1.052,
+        "t_p_value": 0.29329,
+        "wilcoxon_statistic": 36.0,
+        "wilcoxon_p_value": 0.81395,
+        "cohens_d": -0.047,
+        "statistically_significant": false
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -0.5721,
+        "ci_95": [
+          -2.1892,
+          0.6923
+        ],
+        "shapiro_stat": 0.066,
+        "shapiro_p": 9.3653e-44,
+        "is_normal": false,
+        "t_statistic": -0.7259,
+        "t_p_value": 0.46826,
+        "wilcoxon_statistic": 35.0,
+        "wilcoxon_p_value": 0.46307,
+        "cohens_d": -0.0325,
+        "statistically_significant": false
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -49.5792,
+        "ci_95": [
+          -113.4637,
+          8.2702
+        ],
+        "shapiro_stat": 0.1214,
+        "shapiro_p": 7.1606e-43,
+        "is_normal": false,
+        "t_statistic": -1.5212,
+        "t_p_value": 0.12884,
+        "wilcoxon_statistic": 25.0,
+        "wilcoxon_p_value": 0.15196,
+        "cohens_d": -0.068,
+        "statistically_significant": false
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 3.9091,
+        "ci_95": [
+          -5.494,
+          14.8128
+        ],
+        "shapiro_stat": 0.0748,
+        "shapiro_p": 1.286e-43,
+        "is_normal": false,
+        "t_statistic": 0.7084,
+        "t_p_value": 0.47901,
+        "wilcoxon_statistic": 34.0,
+        "wilcoxon_p_value": 0.42158,
+        "cohens_d": 0.0317,
+        "statistically_significant": false
+      }
+    },
+    "vs_DynamicDijkstra": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -0.9674,
+        "ci_95": [
+          -6.4756,
+          4.8637
+        ],
+        "shapiro_stat": 0.2716,
+        "shapiro_p": 3.1756e-40,
+        "is_normal": false,
+        "t_statistic": -0.3117,
+        "t_p_value": 0.75537,
+        "wilcoxon_statistic": 4662.5,
+        "wilcoxon_p_value": 1.2343e-13,
+        "cohens_d": -0.0139,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": 3.9691,
+        "ci_95": [
+          0.7737,
+          7.2152
+        ],
+        "shapiro_stat": 0.1425,
+        "shapiro_p": 1.5916e-42,
+        "is_normal": false,
+        "t_statistic": 2.248,
+        "t_p_value": 0.02501,
+        "wilcoxon_statistic": 232.5,
+        "wilcoxon_p_value": 0.010294,
+        "cohens_d": 0.1005,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": 75.6956,
+        "ci_95": [
+          -2.8494,
+          160.5315
+        ],
+        "shapiro_stat": 0.1544,
+        "shapiro_p": 2.5265e-42,
+        "is_normal": false,
+        "t_statistic": 1.7478,
+        "t_p_value": 0.081121,
+        "wilcoxon_statistic": 10187.0,
+        "wilcoxon_p_value": 1.5394e-06,
+        "cohens_d": 0.0782,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": -20.4596,
+        "ci_95": [
+          -40.3329,
+          -0.0923
+        ],
+        "shapiro_stat": 0.1483,
+        "shapiro_p": 1.9934e-42,
+        "is_normal": false,
+        "t_statistic": -1.8762,
+        "t_p_value": 0.061209,
+        "wilcoxon_statistic": 5576.5,
+        "wilcoxon_p_value": 1.6721e-10,
+        "cohens_d": -0.0839,
+        "statistically_significant": true
+      }
+    },
+    "vs_BaselineDQN": {
+      "travel_time": {
+        "metric": "travel_time",
+        "n_pairs": 500,
+        "mean_diff": -69.9177,
+        "ci_95": [
+          -86.5066,
+          -54.2306
+        ],
+        "shapiro_stat": 0.4075,
+        "shapiro_p": 2.0675e-37,
+        "is_normal": false,
+        "t_statistic": -8.0128,
+        "t_p_value": 7.9919e-15,
+        "wilcoxon_statistic": 186.0,
+        "wilcoxon_p_value": 6.3523e-13,
+        "cohens_d": -0.3583,
+        "statistically_significant": true
+      },
+      "hei": {
+        "metric": "hei",
+        "n_pairs": 500,
+        "mean_diff": -12.3135,
+        "ci_95": [
+          -18.6721,
+          -6.8559
+        ],
+        "shapiro_stat": 0.3909,
+        "shapiro_p": 8.7936e-38,
+        "is_normal": false,
+        "t_statistic": -4.0471,
+        "t_p_value": 6.0094e-05,
+        "wilcoxon_statistic": 362.0,
+        "wilcoxon_p_value": 4.6818e-05,
+        "cohens_d": -0.181,
+        "statistically_significant": true
+      },
+      "distance": {
+        "metric": "distance",
+        "n_pairs": 500,
+        "mean_diff": -597.5478,
+        "ci_95": [
+          -750.6147,
+          -457.5478
+        ],
+        "shapiro_stat": 0.4217,
+        "shapiro_p": 4.3614e-37,
+        "is_normal": false,
+        "t_statistic": -7.4071,
+        "t_p_value": 5.545e-13,
+        "wilcoxon_statistic": 143.0,
+        "wilcoxon_p_value": 1.8145e-14,
+        "cohens_d": -0.3313,
+        "statistically_significant": true
+      },
+      "return": {
+        "metric": "return",
+        "n_pairs": 500,
+        "mean_diff": 112.2463,
+        "ci_95": [
+          75.9637,
+          151.6175
+        ],
+        "shapiro_stat": 0.4365,
+        "shapiro_p": 9.6325e-37,
+        "is_normal": false,
+        "t_statistic": 5.6872,
+        "t_p_value": 2.2018e-08,
+        "wilcoxon_statistic": 504.0,
+        "wilcoxon_p_value": 4.0012e-09,
+        "cohens_d": 0.2543,
+        "statistically_significant": true
+      }
+    }
+  }
+}

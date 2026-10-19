@@ -1,0 +1,16 @@
+# Configuration: Model 5 - TriHybridEvacuationAgent
+model:
+  name: "TriHybridEvacuationAgent"
+  version: "1.0.0"
+
+ensemble_weights:
+  w_ppo: 0.40       # Weight for GNN-MaskablePPO
+  w_dqn: 0.30       # Weight for GNN-QRDQN
+  w_dijkstra: 0.20  # Weight for Dynamic Dijkstra
+  w_safety: 0.10    # Weight for live environmental safety
+
+models:
+  ppo_path_template: "models/hybrid/gnn_ppo/seed_{seed}/best_model.zip"
+  qrdqn_path_template: "models/hybrid/gnn_qrdqn/seed_{seed}/best_model.zip"
+
+seeds: [42, 101, 2024, 777, 999]

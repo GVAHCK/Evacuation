@@ -1,0 +1,16 @@
+{
+  "safety_shield": {
+    "alpha": 0.4,
+    "beta": 0.45,
+    "gamma": 0.15,
+    "hazard_weight": 3.0,
+    "val_score": 95.46
+  },
+  "tri_hybrid": {
+    "w_ppo": 0.4,
+    "w_dqn": 0.3,
+    "w_dijkstra": 0.2,
+    "w_safety": 0.1,
+    "val_score": 99.33
+  }
+}

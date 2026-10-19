@@ -1,0 +1,33 @@
+# RS-MADDPG: Refined Multi-Agent Deep Deterministic Policy Gradient Configuration
+model: "RS-MADDPG"
+family: "marl_six"
+
+agent:
+  n_agents: 4
+  obs_dim: 34
+  act_dim: 4
+  hidden_dim: 128
+  actor_lr: 0.0003
+  critic_lr: 0.0008
+  gamma: 0.98
+  tau: 0.005
+  gumbel_temp: 1.0
+  gumbel_min_temp: 0.2
+  gumbel_anneal_rate: 0.9995
+  buffer_size: 50000
+  batch_size: 128
+  grad_clip: 0.5
+  # Refinements
+  per_alpha: 0.6
+  per_beta_start: 0.4
+  per_beta_end: 1.0
+  hazard_barrier_weight: 2.0
+  relational_heads: 4
+
+training:
+  quick_episodes: 50
+  full_episodes: 300
+  warmup_steps: 100
+  update_freq: 2
+  eval_freq: 25
+  seeds: [42, 101, 2024, 777, 999]

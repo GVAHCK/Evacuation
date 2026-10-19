@@ -1,0 +1,23 @@
+{
+  "dataset_name": "MultiAgentEvacuationOfflineTrajectories",
+  "network_size": "small",
+  "train": {
+    "split": "train",
+    "n_episodes": 40,
+    "total_transitions": 1545,
+    "mean_episode_return": 79.85431815961911,
+    "individual_success_rate": 0.9
+  },
+  "val": {
+    "split": "val",
+    "n_episodes": 15,
+    "total_transitions": 488,
+    "mean_episode_return": 95.71214694747758,
+    "individual_success_rate": 0.9666666666666667
+  },
+  "policy_mix": [
+    "Dynamic Dijkstra (45%)",
+    "Dynamic A* (30%)",
+    "Uniform Valid Exploratory (25%)"
+  ]
+}

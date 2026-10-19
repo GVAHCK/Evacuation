@@ -1,0 +1,20 @@
+{
+  "PPO_vs_Dijkstra_Time": {
+    "paired_t_stat": -2.3972479307848777,
+    "paired_t_pvalue": 0.018394541110144574,
+    "wilcoxon_stat": 0.0,
+    "wilcoxon_pvalue": 0.017960477526078766
+  },
+  "PPO_vs_DQN_Time": {
+    "paired_t_stat": NaN,
+    "paired_t_pvalue": NaN,
+    "wilcoxon_stat": 0.0,
+    "wilcoxon_pvalue": NaN
+  },
+  "PPO_vs_DQN_HEI": {
+    "paired_t_stat": NaN,
+    "paired_t_pvalue": NaN,
+    "wilcoxon_stat": 0.0,
+    "wilcoxon_pvalue": NaN
+  }
+}

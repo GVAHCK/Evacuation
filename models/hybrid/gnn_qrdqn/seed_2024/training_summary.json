@@ -1,0 +1,12 @@
+{
+  "experiment_id": "GNN_QRDQN_seed2024_20260918_105413",
+  "model_type": "gnn_qrdqn",
+  "seed": 2024,
+  "mode": "quick",
+  "timesteps": 5000,
+  "training_duration_s": 15.96,
+  "checkpoint_path": "models/hybrid/gnn_qrdqn/seed_2024\\best_model.zip",
+  "torch_version": "2.5.1+cu121",
+  "cuda_available": true,
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+}

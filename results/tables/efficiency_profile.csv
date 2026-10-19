@@ -1,0 +1,6 @@
+Model,Per_Step_Mean_ms,Per_Step_Median_ms,Per_Step_p95_ms,Per_Step_p99_ms,Scalability_Complexity,Parameter_Count,Disk_Footprint_KB,Training_Steps,Training_Time_s,GPU_Hours,Energy_kWh
+MaskablePPO (Proposed),1.106,1.019,1.980,2.170,O(1) [Constant MLP],"13,125",183.0,"76,800 (3 seeds)",186.4,0.0518,0.00233
+Masked DQN,0.226,0.181,0.372,0.481,O(1) [Constant Q-Net],"6,660",129.4,"75,000 (3 seeds)",182.0,0.0506,0.00228
+Dynamic Dijkstra,0.294,0.283,0.367,0.462,O(E + V log V),0 (Non-parametric),65.9,0 (Zero-shot),0.0,0.0,0.0
+Dynamic A*,0.258,0.247,0.324,0.420,O(E + V log V),0 (Non-parametric),65.9,0 (Zero-shot),0.0,0.0,0.0
+Random Valid,0.007,0.006,0.009,0.010,O(deg(u)),0 (Non-parametric),0.0,0 (Zero-shot),0.0,0.0,0.0

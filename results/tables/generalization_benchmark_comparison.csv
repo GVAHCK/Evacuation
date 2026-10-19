@@ -1,0 +1,11 @@
+Region,Model,Success_Rate,Evacuation_Time_s,HEI,Distance_m,Timeout_Rate,Return,Inference_ms
+George Town (Dense Urban Grid),MaskablePPO (Zero-Shot),96.8 ± 0.00%,139.58 ± 0.00,9.21 ± 0.00,1150.4,3.2%,51.74 ± 0.00,1.763
+George Town (Dense Urban Grid),Masked DQN (Zero-Shot),94.5 ± 1.93%,152.26 ± 10.33,14.06 ± 4.21,1352.2,5.5%,18.74 ± 28.26,0.465
+George Town (Dense Urban Grid),Dynamic Dijkstra (Region Ground Truth),98.0%,138.20,5.48,1108.6,2.0%,72.17,1.720
+George Town (Dense Urban Grid),Dynamic A*,98.0%,138.20,5.48,1108.6,2.0%,72.17,2.357
+George Town (Dense Urban Grid),Random Valid Routing,5.6%,618.92,80.79,6427.8,94.4%,-610.47,0.022
+OMR Suburban (Sparse Linear Corridor),MaskablePPO (Zero-Shot),93.6 ± 0.00%,153.62 ± 0.00,18.04 ± 0.00,1194.9,6.4%,-9.89 ± 0.00,1.476
+OMR Suburban (Sparse Linear Corridor),Masked DQN (Zero-Shot),91.8 ± 2.20%,164.26 ± 11.45,20.08 ± 3.20,1330.2,8.2%,-22.59 ± 20.57,0.267
+OMR Suburban (Sparse Linear Corridor),Dynamic Dijkstra (Region Ground Truth),97.2%,140.98,6.97,977.2,2.8%,57.74,1.438
+OMR Suburban (Sparse Linear Corridor),Dynamic A*,97.2%,140.98,6.97,977.2,2.8%,57.74,1.514
+OMR Suburban (Sparse Linear Corridor),Random Valid Routing,4.4%,647.20,89.62,5473.3,95.6%,-663.72,0.017

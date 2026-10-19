@@ -1,0 +1,5 @@
+Reward_Formulation,Success_Rate,Mean_HEI,Mean_Travel_Time,Mean_Episode_Reward
+Balanced (Proposed),100.0,0.57,55.06,107.14
+Distance-Focused,100.0,0.57,55.06,79.54
+Safety-Focused,2.0,58.35,473.54,-559.86
+Congestion-Focused,100.0,0.57,55.06,19.58

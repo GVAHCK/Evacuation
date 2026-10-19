@@ -1,0 +1,12 @@
+{
+  "experiment_id": "LSTM_PPO_seed42_20260918_104316",
+  "model_type": "lstm_ppo",
+  "seed": 42,
+  "mode": "quick",
+  "timesteps": 5000,
+  "training_duration_s": 13.25,
+  "checkpoint_path": "models/hybrid/lstm_ppo/seed_42\\best_model.pt",
+  "torch_version": "2.5.1+cu121",
+  "cuda_available": true,
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+}

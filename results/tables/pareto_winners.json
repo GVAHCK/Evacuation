@@ -1,0 +1,8 @@
+{
+  "best_reliability_model": "Dynamic A*",
+  "best_safety_model": "Dynamic A*",
+  "best_efficiency_model": "TriHybridAgent",
+  "best_routing_model": "Dynamic A*",
+  "best_real_time_model": "Random Valid",
+  "best_overall_pareto_model": "Dynamic A*"
+}

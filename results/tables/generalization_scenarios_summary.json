@@ -1,0 +1,32 @@
+{
+  "dense_grid": {
+    "region": "dense_grid",
+    "n_scenarios": 250,
+    "valid_od_pairs": 121476,
+    "file_size_kb": 96.4,
+    "out_path": "data/generated/test_dense_grid_scenarios.json",
+    "hazard_breakdown": {
+      "fire": 132,
+      "flood": 118
+    },
+    "seed_range": [
+      80000,
+      80249
+    ]
+  },
+  "sparse_suburban": {
+    "region": "sparse_suburban",
+    "n_scenarios": 250,
+    "valid_od_pairs": 101159,
+    "file_size_kb": 99.5,
+    "out_path": "data/generated/test_sparse_suburban_scenarios.json",
+    "hazard_breakdown": {
+      "fire": 128,
+      "flood": 122
+    },
+    "seed_range": [
+      85000,
+      85249
+    ]
+  }
+}

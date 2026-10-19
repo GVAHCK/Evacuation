@@ -1,0 +1,11 @@
+ablation_dimension,variant_label,has_component,mean_return,joint_success_rate,indiv_success_rate,mean_hei,mean_travel_time,mean_conflicts
+1. Graph Representation,No Graph Component (Base MADDPG MLP),False,113.08732100878646,100.0,100.0,5.618425992146331,65.475,0.6
+1. Graph Representation,With Ego-Graph GNN Component (MA-GRL),True,113.15228297149038,100.0,100.0,5.505031911953276,65.54375,0.35
+2. Multi-Agent Relational Coordination,With GARC Relational Attention Critic (RS-MADDPG),True,113.08732100878646,100.0,100.0,5.618425992146331,65.475,0.6
+2. Multi-Agent Relational Coordination,Without GARC Relational Attention (Base MADDPG),False,113.08732100878646,100.0,100.0,5.618425992146331,65.475,0.6
+3. Offline Pretraining,With Offline CQL Pretraining (Offline-to-Online),True,113.81191457439145,100.0,100.0,5.007215285140113,64.8125,0.5
+3. Offline Pretraining,Without Offline Pretraining (Online from Scratch),False,113.08732100878646,100.0,100.0,5.618425992146331,65.475,0.6
+4. Heterogeneous Cohort Specialization,With Dedicated Cohort Policy Heads (HARL / HAPPO),True,55.05838684204984,15.0,78.75,12.587261666365276,135.10625,0.05
+4. Heterogeneous Cohort Specialization,Without Cohort Specialization (Homogeneous Base Policy),False,113.08732100878646,100.0,100.0,5.618425992146331,65.475,0.6
+5. Hazard Barrier Potential Shaping,With Spatial Hazard Barrier Shaping (RS-MADDPG SHB-PS),True,113.08732100878646,100.0,100.0,5.618425992146331,65.475,0.6
+5. Hazard Barrier Potential Shaping,Without Spatial Hazard Barrier Shaping (Unshaped Base Reward),False,113.08732100878646,100.0,100.0,5.618425992146331,65.475,0.6

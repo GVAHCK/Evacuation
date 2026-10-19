@@ -1,0 +1,27 @@
+# GraphSAGE-MAPPO Configuration
+model: "GraphSAGE-MAPPO"
+family: "marl_six"
+
+agent:
+  n_agents: 4
+  obs_dim: 34
+  act_dim: 4
+  graphsage_hidden_dim: 64
+  mlp_hidden_dim: 128
+  actor_lr: 0.0003
+  critic_lr: 0.001
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  entropy_coef: 0.01
+  value_loss_coef: 0.5
+  max_grad_norm: 0.5
+  ppo_epochs: 4
+  batch_size: 64
+
+training:
+  quick_episodes: 50
+  full_episodes: 300
+  steps_per_rollout: 128
+  eval_freq: 25
+  seeds: [42, 101, 2024, 777, 999]

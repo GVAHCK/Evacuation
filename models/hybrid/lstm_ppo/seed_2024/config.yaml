@@ -1,0 +1,26 @@
+hyperparameters:
+  clip_range: 0.2
+  ent_coef: 0.01
+  gae_lambda: 0.95
+  gamma: 0.99
+  learning_rate: 0.0003
+  max_grad_norm: 0.5
+  vf_coef: 0.5
+lstm:
+  action_dim: 4
+  hidden_dim: 64
+  lstm_hidden_dim: 64
+  obs_dim: 34
+model:
+  name: RecurrentMaskablePPO
+  version: 1.0.0
+training:
+  full_timesteps: 50000
+  quick_timesteps: 5000
+  rollout_steps: 256
+  seeds:
+  - 42
+  - 101
+  - 2024
+  - 777
+  - 999

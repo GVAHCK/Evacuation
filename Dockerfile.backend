@@ -1,0 +1,29 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies (SUMO and networking libraries)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    git \
+    libpq-dev \
+    sumo \
+    sumo-tools \
+    sumo-doc \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV SUMO_HOME=/usr/share/sumo
+ENV PYTHONPATH=/app:/app/backend
+
+# Install python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir fastapi "uvicorn[standard]" pydantic pydantic-settings "sqlalchemy>=2.0" alembic psycopg2-binary pyjwt bcrypt websockets httpx python-multipart
+
+# Copy repository
+COPY . /app
+
+EXPOSE 8000
+
+CMD ["uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8000"]

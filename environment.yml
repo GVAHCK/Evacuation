@@ -1,0 +1,31 @@
+name: rl-evac-twin
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.5.1+cu121
+      - numpy<2.0.0
+      - scipy
+      - pandas
+      - scikit-learn
+      - gymnasium
+      - stable-baselines3
+      - networkx
+      - osmnx
+      - geopandas
+      - shapely
+      - eclipse-sumo
+      - sumolib
+      - traci
+      - pyyaml
+      - pytest
+      - matplotlib
+      - seaborn
+      - tensorboard
+      - rich

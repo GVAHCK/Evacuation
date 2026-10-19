@@ -1,0 +1,44 @@
+{
+  "highest_joint_success": {
+    "model": "offline_online",
+    "value": 92.88,
+    "metric": "Joint Success Rate (%)"
+  },
+  "lowest_hazard_exposure": {
+    "model": "ma_grl",
+    "value": 6.712665277888261,
+    "metric": "Mean HEI"
+  },
+  "fastest_evacuation": {
+    "model": "offline_online",
+    "value": 137.61415000000002,
+    "metric": "Travel Time (s)"
+  },
+  "lowest_bottleneck_conflicts": {
+    "model": "harl",
+    "value": 0.5856,
+    "metric": "Total Intersection Conflicts"
+  },
+  "lowest_route_overlap": {
+    "model": "graphsage_mappo",
+    "value": 0.04499333482559354,
+    "metric": "Mean Route Overlap (Jaccard)"
+  },
+  "highest_coordination_efficiency": {
+    "model": "offline_online",
+    "value": 0.9544883475181278,
+    "metric": "Coordination Efficiency Index"
+  },
+  "fastest_inference_latency": {
+    "model": "maddpg",
+    "value": 2.920003267190863,
+    "metric": "Step Inference Latency (ms)"
+  },
+  "pareto_efficient_cohort": [
+    "harl",
+    "ma_grl",
+    "maddpg",
+    "offline_online",
+    "rs_maddpg"
+  ]
+}

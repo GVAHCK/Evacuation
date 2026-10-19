@@ -1,0 +1,11 @@
+{
+  "sample_size_N": 500,
+  "degrees_of_freedom": 499,
+  "non_zero_differences": 215,
+  "PPO_vs_Dijkstra_Time": {
+    "paired_t_stat": -1.0468004093463816,
+    "paired_t_pvalue": 0.29569842150683734,
+    "wilcoxon_stat": 4553.0,
+    "wilcoxon_pvalue": 1.0729561588708115e-14
+  }
+}

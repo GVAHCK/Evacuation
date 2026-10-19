@@ -1,0 +1,15 @@
+# Configuration: Model 4 - SafetyShieldPPO
+model:
+  name: "SafetyShieldPPO"
+  version: "1.0.0"
+
+safety_weights:
+  alpha: 0.50             # Policy probability weight
+  beta: 0.35              # Deterministic safety weight
+  gamma: 0.15             # Goal progress weight
+  hazard_weight: 2.5      # Edge & node hazard penalty multiplier
+  congestion_weight: 1.0  # Traffic congestion penalty multiplier
+  closure_threshold: 0.65 # Edge closure threshold for hard constraint
+
+base_ppo_model_path: "models/hybrid/gnn_ppo/seed_42/best_model.zip"
+seeds: [42, 101, 2024, 777, 999]
