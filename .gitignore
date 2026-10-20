@@ -58,3 +58,4 @@ Thumbs.db
 
 # Generated backups
 package-lock.backup.json
+.mypy_cache/
